@@ -122,9 +122,9 @@ const GroupLink = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F9F9F9] to-white">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white py-16">
+      <div className="bg-[#25D366] text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative inline-block mb-6">
             <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto transform hover:scale-110 transition-transform duration-300">
@@ -226,10 +226,10 @@ const GroupLink = () => {
 
             {/* Floating Graphics */}
             <div className="relative">
-              <div className="absolute -top-8 -right-8 w-16 h-16 bg-gradient-to-br from-[#25D366]/20 to-[#1877F2]/20 rounded-2xl flex items-center justify-center animate-float">
+              <div className="absolute -top-8 -right-8 w-16 h-16 bg-[#25D366]/20 rounded-2xl flex items-center justify-center animate-float">
                 <Users className="h-8 w-8 text-[#25D366]" />
               </div>
-              <div className="absolute -bottom-8 -left-8 w-12 h-12 bg-gradient-to-br from-[#F6C90E]/20 to-[#25D366]/20 rounded-xl flex items-center justify-center animate-float-delay-1">
+              <div className="absolute -bottom-8 -left-8 w-12 h-12 bg-[#F6C90E]/20 rounded-xl flex items-center justify-center animate-float-delay-1">
                 <Share2 className="h-6 w-6 text-[#F6C90E]" />
               </div>
             </div>

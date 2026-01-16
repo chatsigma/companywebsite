@@ -3,9 +3,9 @@ import { Rocket, Play, CheckCircle, ArrowRight } from 'lucide-react';
 
 const GettingStarted = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white py-20">
+      <div className="bg-[#25D366] text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative inline-block mb-6">
             <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto transform hover:scale-110 transition-transform duration-300">
@@ -24,7 +24,7 @@ const GettingStarted = () => {
         {/* Coming Soon */}
         <div className="text-center">
           <div className="relative inline-block mb-8">
-            <div className="w-32 h-32 bg-gradient-to-br from-[#25D366] to-[#006AFF] rounded-3xl flex items-center justify-center mx-auto transform hover:scale-110 transition-transform duration-300">
+            <div className="w-32 h-32 bg-[#25D366] rounded-3xl flex items-center justify-center mx-auto transform hover:scale-110 transition-transform duration-300">
               <Play className="h-16 w-16 text-white animate-pulse" />
             </div>
           </div>

@@ -55,9 +55,9 @@ const AIChatbot = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white py-20">
+      <div className="bg-[#25D366] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -137,7 +137,7 @@ const AIChatbot = () => {
             {benefits.map((benefit, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center mr-4">
                     <benefit.icon className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">{benefit.title}</h3>
@@ -209,7 +209,7 @@ const AIChatbot = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white">
+      <section className="py-20 bg-[#1877F2] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Build Your AI Chatbot?

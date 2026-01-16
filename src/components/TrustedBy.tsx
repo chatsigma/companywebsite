@@ -48,7 +48,7 @@ const TrustedBy = () => {
 
         {/* Company logos with mobile optimization */}
         <div className="relative overflow-hidden bg-white rounded-lg sm:rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 mb-6 sm:mb-8 md:mb-12 shadow-md sm:shadow-lg">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#25D366]/3 to-[#006AFF]/3"></div>
+          <div className="absolute inset-0 bg-[#25D366]/3"></div>
           <div className="relative">
             <div className="flex animate-scroll-fast">
               {[...companies, ...companies].map((company, index) => (
@@ -93,7 +93,7 @@ const TrustedBy = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           <div className="text-center group">
             <div className="relative mb-2 sm:mb-3 md:mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#25D366] to-[#1da851] rounded-lg sm:rounded-xl md:rounded-2xl mx-auto flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border-2 sm:border-4 border-white shadow-md sm:shadow-lg">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-[#25D366] rounded-lg sm:rounded-xl md:rounded-2xl mx-auto flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border-2 sm:border-4 border-white shadow-md sm:shadow-lg">
                 <div className="text-white text-sm sm:text-lg md:text-2xl">🏢</div>
               </div>
               <div className="absolute -top-0.5 -right-0.5 sm:-top-1 sm:-right-1 md:-top-2 md:-right-2 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 bg-[#006AFF] rounded-full animate-pulse"></div>
@@ -105,7 +105,7 @@ const TrustedBy = () => {
           
           <div className="text-center group">
             <div className="relative mb-2 sm:mb-3 md:mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-[#006AFF] to-[#0052CC] rounded-lg sm:rounded-xl md:rounded-2xl mx-auto flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border-2 sm:border-4 border-white shadow-md sm:shadow-lg">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-[#006AFF] rounded-lg sm:rounded-xl md:rounded-2xl mx-auto flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border-2 sm:border-4 border-white shadow-md sm:shadow-lg">
                 <div className="text-white text-sm sm:text-lg md:text-2xl">💬</div>
               </div>
               <div className="absolute -top-0.5 -right-0.5 sm:-top-1 sm:-right-1 md:-top-2 md:-right-2 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 bg-[#25D366] rounded-full animate-pulse delay-300"></div>
@@ -117,7 +117,7 @@ const TrustedBy = () => {
           
           <div className="text-center group">
             <div className="relative mb-2 sm:mb-3 md:mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg sm:rounded-xl md:rounded-2xl mx-auto flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border-2 sm:border-4 border-white shadow-md sm:shadow-lg">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-purple-500 rounded-lg sm:rounded-xl md:rounded-2xl mx-auto flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border-2 sm:border-4 border-white shadow-md sm:shadow-lg">
                 <div className="text-white text-sm sm:text-lg md:text-2xl">⚡</div>
               </div>
               <div className="absolute -top-0.5 -right-0.5 sm:-top-1 sm:-right-1 md:-top-2 md:-right-2 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 bg-orange-500 rounded-full animate-pulse delay-500"></div>
@@ -129,7 +129,7 @@ const TrustedBy = () => {
           
           <div className="text-center group">
             <div className="relative mb-2 sm:mb-3 md:mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg sm:rounded-xl md:rounded-2xl mx-auto flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border-2 sm:border-4 border-white shadow-md sm:shadow-lg">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-orange-500 rounded-lg sm:rounded-xl md:rounded-2xl mx-auto flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300 border-2 sm:border-4 border-white shadow-md sm:shadow-lg">
                 <div className="text-white text-sm sm:text-lg md:text-2xl">🎧</div>
               </div>
               <div className="absolute -top-0.5 -right-0.5 sm:-top-1 sm:-right-1 md:-top-2 md:-right-2 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 bg-[#25D366] rounded-full animate-pulse delay-700"></div>

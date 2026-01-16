@@ -64,9 +64,9 @@ const BusinessAutomation = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white py-20">
+      <div className="bg-[#25D366] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -152,10 +152,10 @@ const BusinessAutomation = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Why Automate Your Business Processes?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Transform your business operations with intelligent automation that works 24/7 to grow your business.
             </p>
           </div>
@@ -164,12 +164,12 @@ const BusinessAutomation = () => {
             {benefits.map((benefit, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center mr-4">
                     <benefit.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">{benefit.title}</h3>
+                  <h3 className="text-xl font-bold text-black">{benefit.title}</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                <p className="text-gray-700 leading-relaxed">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -180,10 +180,10 @@ const BusinessAutomation = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               What Can We Automate?
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               From simple tasks to complex business processes - we can automate anything
             </p>
           </div>
@@ -192,20 +192,20 @@ const BusinessAutomation = () => {
             {automationTypes.map((automation, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center mr-4">
                     <automation.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">{automation.title}</h3>
+                  <h3 className="text-xl font-bold text-black">{automation.title}</h3>
                 </div>
-                
-                <p className="text-gray-600 mb-6">{automation.description}</p>
-                
+
+                <p className="text-gray-700 mb-6">{automation.description}</p>
+
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-gray-900 mb-3">Example Processes:</h4>
+                  <h4 className="font-semibold text-black mb-3">Example Processes:</h4>
                   {automation.processes.map((process, processIndex) => (
                     <div key={processIndex} className="flex items-center">
                       <div className="w-2 h-2 bg-[#25D366] rounded-full mr-3"></div>
-                      <span className="text-sm text-gray-600">{process}</span>
+                      <span className="text-sm text-gray-700">{process}</span>
                     </div>
                   ))}
                 </div>
@@ -219,10 +219,10 @@ const BusinessAutomation = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Powerful Automation Features
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               Advanced tools to create and manage complex business automations
             </p>
           </div>
@@ -244,44 +244,44 @@ const BusinessAutomation = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               How It Works
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               Simple 3-step process to automate any business workflow
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-xl font-bold">1</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Share Your Process</h3>
-              <p className="text-gray-600">Tell us about your current business process and what you want to automate</p>
+              <h3 className="text-xl font-bold text-black mb-4">Share Your Process</h3>
+              <p className="text-gray-700">Tell us about your current business process and what you want to automate</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-xl font-bold">2</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">We Build It</h3>
-              <p className="text-gray-600">Our experts create a custom automation workflow tailored to your needs</p>
+              <h3 className="text-xl font-bold text-black mb-4">We Build It</h3>
+              <p className="text-gray-700">Our experts create a custom automation workflow tailored to your needs</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-xl font-bold">3</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">You Save Time</h3>
-              <p className="text-gray-600">Watch your business run automatically while you focus on growth</p>
+              <h3 className="text-xl font-bold text-black mb-4">You Save Time</h3>
+              <p className="text-gray-700">Watch your business run automatically while you focus on growth</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white">
+      <section className="py-20 bg-[#25D366] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Automate Your Business?

@@ -21,7 +21,7 @@ const AnimatedHeroGraphic = () => {
   ];
 
   return (
-    <div className="relative w-full h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-blue-50 rounded-3xl">
+    <div className="relative w-full h-[500px] flex items-center justify-center overflow-hidden bg-gray-50 rounded-3xl">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-32 h-32 bg-[#25D366]/10 rounded-full blur-2xl animate-pulse"></div>
@@ -36,9 +36,9 @@ const AnimatedHeroGraphic = () => {
           {/* Person Illustration */}
           <div className="w-40 h-48 mx-auto relative">
             {/* Head */}
-            <div className="w-20 h-20 bg-gradient-to-br from-orange-200 to-orange-300 rounded-full mx-auto mb-3 relative shadow-lg">
+            <div className="w-20 h-20 bg-orange-200 rounded-full mx-auto mb-3 relative shadow-lg">
               {/* Professional hairstyle */}
-              <div className="absolute -top-2 left-2 right-2 h-6 bg-gradient-to-br from-amber-800 to-amber-900 rounded-t-full"></div>
+              <div className="absolute -top-2 left-2 right-2 h-6 bg-amber-800 rounded-t-full"></div>
               {/* Eyes */}
               <div className="absolute top-6 left-5 w-2 h-2 bg-gray-800 rounded-full"></div>
               <div className="absolute top-6 right-5 w-2 h-2 bg-gray-800 rounded-full"></div>
@@ -47,19 +47,19 @@ const AnimatedHeroGraphic = () => {
             </div>
             
             {/* Professional Attire */}
-            <div className="w-24 h-28 bg-gradient-to-br from-blue-600 to-blue-700 rounded-t-2xl mx-auto relative shadow-lg">
+            <div className="w-24 h-28 bg-blue-700 rounded-t-2xl mx-auto relative shadow-lg">
               {/* Shirt collar */}
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-8 h-4 bg-white rounded-b-lg"></div>
               {/* Tie */}
-              <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-3 h-12 bg-gradient-to-b from-red-600 to-red-700 rounded-b-lg"></div>
+              <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-3 h-12 bg-red-600 rounded-b-lg"></div>
               
               {/* Arms */}
-              <div className="absolute -left-4 top-6 w-8 h-16 bg-gradient-to-br from-orange-200 to-orange-300 rounded-lg transform rotate-12 shadow-md"></div>
-              <div className="absolute -right-4 top-6 w-8 h-16 bg-gradient-to-br from-orange-200 to-orange-300 rounded-lg transform -rotate-12 shadow-md"></div>
+              <div className="absolute -left-4 top-6 w-8 h-16 bg-orange-200 rounded-lg transform rotate-12 shadow-md"></div>
+              <div className="absolute -right-4 top-6 w-8 h-16 bg-orange-200 rounded-lg transform -rotate-12 shadow-md"></div>
               
               {/* Smartphone in hand */}
               <div className="absolute -right-2 top-8 w-5 h-8 bg-gray-900 rounded-lg transform -rotate-12 shadow-lg">
-                <div className="w-4 h-6 bg-gradient-to-br from-blue-400 to-blue-500 rounded m-0.5 animate-pulse">
+                <div className="w-4 h-6 bg-blue-400 rounded m-0.5 animate-pulse">
                   {/* WhatsApp interface on phone */}
                   <div className="w-3 h-1 bg-[#25D366] rounded mt-1 mx-auto animate-pulse"></div>
                   <div className="w-2 h-0.5 bg-white rounded mt-1 ml-1"></div>
@@ -185,7 +185,7 @@ const AnimatedHeroGraphic = () => {
         {[...Array(15)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-2 h-2 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-full animate-float-particle opacity-40"
+            className="absolute w-2 h-2 bg-[#25D366] rounded-full animate-float-particle opacity-40"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,

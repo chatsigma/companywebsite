@@ -14,8 +14,8 @@ const Industries = () => {
       color: 'from-[#25D366] to-[#006AFF]',
       path: '/industries/ecommerce',
       customGraphic: (
-        <div className="relative w-full h-32 sm:h-48 bg-gradient-to-br from-[#25D366]/20 to-[#006AFF]/20 rounded-lg flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#25D366]/30 to-[#006AFF]/30"></div>
+        <div className="relative w-full h-32 sm:h-48 bg-[#25D366]/20 rounded-lg flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 bg-[#25D366]/30"></div>
           <div className="relative z-10">
             <div className="w-12 sm:w-20 h-12 sm:h-20 bg-white rounded-xl sm:rounded-2xl shadow-lg flex items-center justify-center mb-2 sm:mb-4 transform hover:scale-110 transition-transform">
               <ShoppingBag className="h-6 sm:h-10 w-6 sm:w-10 text-[#25D366]" />
@@ -39,8 +39,8 @@ const Industries = () => {
       color: 'from-red-500 to-pink-600',
       path: '/industries/healthcare',
       customGraphic: (
-        <div className="relative w-full h-32 sm:h-48 bg-gradient-to-br from-red-500/20 to-pink-600/20 rounded-lg flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-red-500/30 to-pink-600/30"></div>
+        <div className="relative w-full h-32 sm:h-48 bg-red-500/20 rounded-lg flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 bg-red-500/30"></div>
           <div className="relative z-10">
             <div className="w-12 sm:w-20 h-12 sm:h-20 bg-white rounded-xl sm:rounded-2xl shadow-lg flex items-center justify-center mb-2 sm:mb-4 transform hover:scale-110 transition-transform">
               <Heart className="h-6 sm:h-10 w-6 sm:w-10 text-red-500" />
@@ -64,8 +64,8 @@ const Industries = () => {
       color: 'from-green-500 to-emerald-600',
       path: '/industries/finance',
       customGraphic: (
-        <div className="relative w-full h-32 sm:h-48 bg-gradient-to-br from-green-500/20 to-emerald-600/20 rounded-lg flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-green-500/30 to-emerald-600/30"></div>
+        <div className="relative w-full h-32 sm:h-48 bg-green-500/20 rounded-lg flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 bg-green-500/30"></div>
           <div className="relative z-10">
             <div className="w-12 sm:w-20 h-12 sm:h-20 bg-white rounded-xl sm:rounded-2xl shadow-lg flex items-center justify-center mb-2 sm:mb-4 transform hover:scale-110 transition-transform">
               <DollarSign className="h-6 sm:h-10 w-6 sm:w-10 text-green-500" />
@@ -88,8 +88,8 @@ const Industries = () => {
       color: 'from-yellow-500 to-orange-600',
       path: '/industries/education',
       customGraphic: (
-        <div className="relative w-full h-32 sm:h-48 bg-gradient-to-br from-yellow-500/20 to-orange-600/20 rounded-lg flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/30 to-orange-600/30"></div>
+        <div className="relative w-full h-32 sm:h-48 bg-[#25D366]/20 rounded-lg flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 bg-[#25D366]/30"></div>
           <div className="relative z-10">
             <div className="w-12 sm:w-20 h-12 sm:h-20 bg-white rounded-xl sm:rounded-2xl shadow-lg flex items-center justify-center mb-2 sm:mb-4 transform hover:scale-110 transition-transform">
               <GraduationCap className="h-6 sm:h-10 w-6 sm:w-10 text-yellow-500" />
@@ -112,8 +112,8 @@ const Industries = () => {
       color: 'from-indigo-500 to-blue-600',
       path: '/industries/real-estate',
       customGraphic: (
-        <div className="relative w-full h-32 sm:h-48 bg-gradient-to-br from-indigo-500/20 to-blue-600/20 rounded-lg flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/30 to-blue-600/30"></div>
+        <div className="relative w-full h-32 sm:h-48 bg-[#1877F2]/20 rounded-lg flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 bg-[#1877F2]/30"></div>
           <div className="relative z-10">
             <div className="w-12 sm:w-20 h-12 sm:h-20 bg-white rounded-xl sm:rounded-2xl shadow-lg flex items-center justify-center mb-2 sm:mb-4 transform hover:scale-110 transition-transform">
               <Home className="h-6 sm:h-10 w-6 sm:w-10 text-indigo-500" />
@@ -137,8 +137,8 @@ const Industries = () => {
       color: 'from-purple-500 to-pink-600',
       path: '/industries/hospitality',
       customGraphic: (
-        <div className="relative w-full h-32 sm:h-48 bg-gradient-to-br from-purple-500/20 to-pink-600/20 rounded-lg flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-pink-600/30"></div>
+        <div className="relative w-full h-32 sm:h-48 bg-[#1877F2]/20 rounded-lg flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 bg-[#1877F2]/30"></div>
           <div className="relative z-10">
             <div className="w-12 sm:w-20 h-12 sm:h-20 bg-white rounded-xl sm:rounded-2xl shadow-lg flex items-center justify-center mb-2 sm:mb-4 transform hover:scale-110 transition-transform">
               <Coffee className="h-6 sm:h-10 w-6 sm:w-10 text-purple-500" />

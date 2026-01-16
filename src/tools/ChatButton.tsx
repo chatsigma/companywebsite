@@ -83,9 +83,9 @@ ${generateHTML()}`;
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F9F9F9] to-white">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white py-16">
+      <div className="bg-[#25D366] text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative inline-block mb-6">
             <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto transform hover:scale-110 transition-transform duration-300">
@@ -223,7 +223,7 @@ ${generateHTML()}`;
               </div>
               
               <div className="relative bg-gray-100 rounded-xl p-8 min-h-64 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-green-50 opacity-50"></div>
+                <div className="absolute inset-0 bg-white opacity-50"></div>
                 <div className="relative text-center text-gray-500 py-16">
                   <p>Your website content goes here...</p>
                 </div>

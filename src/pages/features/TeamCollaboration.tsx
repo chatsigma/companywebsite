@@ -58,9 +58,9 @@ const TeamCollaboration = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white py-20">
+      <div className="bg-[#25D366] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -147,10 +147,10 @@ const TeamCollaboration = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Why Team Collaboration Matters?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Scale your customer support efficiently while maintaining quality and consistency across all interactions.
             </p>
           </div>
@@ -159,12 +159,12 @@ const TeamCollaboration = () => {
             {benefits.map((benefit, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center mr-4">
                     <benefit.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">{benefit.title}</h3>
+                  <h3 className="text-xl font-bold text-black">{benefit.title}</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                <p className="text-gray-700 leading-relaxed">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -175,10 +175,10 @@ const TeamCollaboration = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Team Collaboration Features
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               Everything your team needs to work together effectively
             </p>
           </div>
@@ -200,10 +200,10 @@ const TeamCollaboration = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Advanced Collaboration Tools
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               Powerful features designed to enhance team productivity and customer satisfaction
             </p>
           </div>
@@ -212,20 +212,20 @@ const TeamCollaboration = () => {
             {collaborationFeatures.map((feature, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center mr-4">
                     <feature.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">{feature.title}</h3>
+                  <h3 className="text-xl font-bold text-black">{feature.title}</h3>
                 </div>
-                
-                <p className="text-gray-600 mb-6">{feature.description}</p>
-                
+
+                <p className="text-gray-700 mb-6">{feature.description}</p>
+
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-gray-900 mb-3">Key Capabilities:</h4>
+                  <h4 className="font-semibold text-black mb-3">Key Capabilities:</h4>
                   {feature.capabilities.map((capability, capIndex) => (
                     <div key={capIndex} className="flex items-center">
                       <div className="w-2 h-2 bg-[#25D366] rounded-full mr-3"></div>
-                      <span className="text-sm text-gray-600">{capability}</span>
+                      <span className="text-sm text-gray-700">{capability}</span>
                     </div>
                   ))}
                 </div>
@@ -236,7 +236,7 @@ const TeamCollaboration = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white">
+      <section className="py-20 bg-[#25D366] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Scale Your Team?

@@ -10,9 +10,9 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white py-16 sm:py-20">
+      <div className="bg-[#25D366] text-white py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 sm:mb-6">About ChatSigma</h1>
           <p className="text-lg sm:text-xl opacity-90 max-w-3xl mx-auto">
@@ -36,7 +36,7 @@ const AboutPage = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-[#25D366] to-[#1877F2] rounded-xl sm:rounded-2xl mx-auto flex items-center justify-center mb-3 sm:mb-4">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#25D366] rounded-xl sm:rounded-2xl mx-auto flex items-center justify-center mb-3 sm:mb-4">
                 <stat.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
               <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 sm:mb-2">{stat.number}</div>

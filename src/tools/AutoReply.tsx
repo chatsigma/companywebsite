@@ -101,9 +101,9 @@ const AutoReply = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F9F9F9] to-white">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white py-16">
+      <div className="bg-[#25D366] text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative inline-block mb-6">
             <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto transform hover:scale-110 transition-transform duration-300">
@@ -170,7 +170,7 @@ const AutoReply = () => {
               <button
                 onClick={generateTemplates}
                 disabled={!businessType || !useCase || isGenerating}
-                className="w-full py-4 bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white rounded-xl font-semibold hover:from-[#1da851] hover:to-[#1565C0] transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                className="w-full py-4 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1da851] transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isGenerating ? (
                   <>
@@ -188,10 +188,10 @@ const AutoReply = () => {
 
             {/* Floating Graphics */}
             <div className="relative mt-8">
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-[#25D366]/20 to-[#1877F2]/20 rounded-2xl flex items-center justify-center animate-float">
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-[#25D366]/20 rounded-2xl flex items-center justify-center animate-float">
                 <Bot className="h-8 w-8 text-[#25D366]" />
               </div>
-              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-[#F6C90E]/20 to-[#25D366]/20 rounded-xl flex items-center justify-center animate-float-delay-1">
+              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-[#F6C90E]/20 rounded-xl flex items-center justify-center animate-float-delay-1">
                 <Sparkles className="h-6 w-6 text-[#F6C90E]" />
               </div>
             </div>
@@ -207,12 +207,12 @@ const AutoReply = () => {
                   {generatedTemplates.map((template, index) => (
                     <div
                       key={index}
-                      className="group bg-gradient-to-r from-gray-50 to-white p-6 rounded-xl border-2 border-gray-100 hover:border-[#25D366] transition-all duration-300 transform hover:scale-102"
+                      className="group bg-gray-50 p-6 rounded-xl border-2 border-gray-100 hover:border-[#25D366] transition-all duration-300 transform hover:scale-102"
                     >
                       <div className="flex items-start justify-between">
                         <div className="flex-1">
                           <div className="flex items-center mb-3">
-                            <div className="w-8 h-8 bg-gradient-to-r from-[#25D366] to-[#1877F2] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                            <div className="w-8 h-8 bg-[#25D366] rounded-full flex items-center justify-center text-white font-bold text-sm">
                               {index + 1}
                             </div>
                             <span className="ml-3 text-sm font-medium text-gray-500">Template {index + 1}</span>
@@ -246,7 +246,7 @@ const AutoReply = () => {
             </div>
 
             {/* Tips Section */}
-            <div className="bg-gradient-to-r from-[#25D366]/10 to-[#1877F2]/10 rounded-2xl p-6">
+            <div className="bg-[#25D366]/10 rounded-2xl p-6">
               <h4 className="font-bold text-[#333333] mb-4">💡 Template Tips</h4>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>• Personalize templates with customer names when possible</li>

@@ -239,7 +239,7 @@ const Header = () => {
               href="https://app.chatsigma.com/vb/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 xl:px-6 py-2 bg-gradient-to-r from-[#25D366] to-[#1da851] text-white rounded-lg hover:from-[#1da851] hover:to-[#25D366] transition-all duration-200 transform hover:scale-105 font-semibold shadow-lg text-sm xl:text-base"
+              className="px-4 xl:px-6 py-2 bg-[#25D366] text-white rounded-lg hover:bg-[#1da851] transition-all duration-200 transform hover:scale-105 font-semibold shadow-lg text-sm xl:text-base"
             >
               Free Trial
             </a>
@@ -366,7 +366,7 @@ const Header = () => {
               <a href="https://app.chatsigma.com/vb/" target="_blank" rel="noopener noreferrer" className="block w-full py-3 text-[#25D366] border-2 border-[#25D366] rounded-lg font-semibold hover:bg-[#25D366] hover:text-white transition-all text-center">
                 Sign In
               </a>
-              <a href="https://app.chatsigma.com/vb/" target="_blank" rel="noopener noreferrer" className="block w-full py-3 bg-gradient-to-r from-[#25D366] to-[#1da851] text-white rounded-lg font-semibold shadow-lg text-center">
+              <a href="https://app.chatsigma.com/vb/" target="_blank" rel="noopener noreferrer" className="block w-full py-3 bg-[#25D366] text-white rounded-lg font-semibold shadow-lg text-center">
                 Free Trial
               </a>
             </div>

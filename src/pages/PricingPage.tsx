@@ -263,12 +263,12 @@ const PricingPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <div className="min-h-screen bg-gray-50 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 opacity-50">
         {/* Gradient Orbs */}
-        <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-gradient-to-r from-[#25D366]/10 to-[#1877F2]/10 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-80 h-80 bg-gradient-to-l from-[#1877F2]/10 to-[#25D366]/10 rounded-full blur-3xl animate-pulse-delayed"></div>
+        <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-[#25D366]/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-80 h-80 bg-[#1877F2]/10 rounded-full blur-3xl animate-pulse-delayed"></div>
         
         {/* Floating icons */}
         {[...Array(12)].map((_, i) => (
@@ -315,7 +315,7 @@ const PricingPage = () => {
         className={`relative pt-20 sm:pt-24 pb-6 sm:pb-8 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['hero-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'}`}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-[#25D366] to-[#1877F2] bg-clip-text text-transparent mt-10 sm:mt-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-black mt-10 sm:mt-6">
             Simple, transparent plans for every business
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-4 sm:mb-6">
@@ -334,14 +334,14 @@ const PricingPage = () => {
           {/* Currency Toggle */}
           <div className="flex justify-center mb-6 sm:mb-8">
             <div className="inline-flex items-center bg-white rounded-full p-1.5 shadow-lg">
-              <button 
-                className={`flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all ${!showUSD ? 'bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white shadow-md' : 'text-gray-700 hover:bg-gray-100'}`}
+              <button
+                className={`flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all ${!showUSD ? 'bg-[#25D366] text-white shadow-md' : 'text-gray-700 hover:bg-gray-100'}`}
                 onClick={() => setShowUSD(false)}
               >
                 ₹ INR
               </button>
-              <button 
-                className={`flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all ${showUSD ? 'bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white shadow-md' : 'text-gray-700 hover:bg-gray-100'}`}
+              <button
+                className={`flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all ${showUSD ? 'bg-[#1877F2] text-white shadow-md' : 'text-gray-700 hover:bg-gray-100'}`}
                 onClick={() => setShowUSD(true)}
               >
                 $ USD
@@ -360,12 +360,12 @@ const PricingPage = () => {
                   animationDelay: `${index * 0.1}s`
                 }}
               >
-                {/* Gradient top border */}
-                <div className="h-2 w-full bg-gradient-to-r from-[#25D366] to-[#1877F2]"></div>
+                {/* Top border */}
+                <div className="h-2 w-full bg-[#25D366]"></div>
                 
                 <div className={`absolute -top-4 right-4 z-20 popular-badge ${!plan.popular && 'hidden'}`}>
-                  <div className="bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center shadow-lg animate-pulse">
-                    <Star className="h-4 w-4 mr-1 text-yellow-300 fill-current" />
+                  <div className="bg-[#25D366] text-white px-4 py-1 rounded-full text-sm font-semibold flex items-center shadow-lg animate-pulse">
+                    <Star className="h-4 w-4 mr-1 text-yellow-400 fill-current" />
                     Most Popular
                   </div>
                 </div>
@@ -379,27 +379,21 @@ const PricingPage = () => {
                   
                   <div className="mb-4">
                     <div className="flex items-baseline">
-                      <span className="text-4xl font-bold bg-gradient-to-r from-[#25D366] to-[#1877F2] bg-clip-text text-transparent">{plan.price}</span>
+                      <span className="text-4xl font-bold text-[#25D366]">{plan.price}</span>
                       <span className="text-gray-600 ml-1">{plan.period}</span>
                     </div>
                     <p className="text-gray-600 mt-2">{plan.description}</p>
                   </div>
                   
                   {/* Divider */}
-                  <div className="w-full h-px bg-gradient-to-r from-[#25D366]/20 via-[#1877F2]/20 to-[#25D366]/20 my-6"></div>
+                  <div className="w-full h-px bg-gray-200 my-6"></div>
 
                   {/* Features List */}
                   <ul className="space-y-4 mb-8 min-h-[320px]">
                     {plan.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start">
                         <div className="mt-1 mr-3 flex-shrink-0">
-                          {feature.includes('Dedicated account manager') ? (
-                            <div className="w-5 h-5 rounded-full bg-gradient-to-r from-[#25D366] to-[#1877F2] flex items-center justify-center">
-                              <Check className="h-3 w-3 text-white" />
-                            </div>
-                          ) : (
-                            <Check className="h-5 w-5 text-[#25D366]" />
-                          )}
+                          <Check className="h-5 w-5 text-[#25D366]" />
                         </div>
                         <span className={`text-gray-700 ${feature.includes('Dedicated account manager') ? 'font-medium' : ''}`}>
                           {feature}
@@ -413,7 +407,7 @@ const PricingPage = () => {
                     href={plan.ctaLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3 sm:py-4 bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center relative overflow-hidden group"
+                    className="w-full py-3 sm:py-4 bg-[#25D366] text-white rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center relative overflow-hidden group"
                   >
                     <span className="absolute -inset-x-10 top-0 bottom-0 h-full w-20 bg-white/20 transform -skew-x-12 group-hover:animate-shine"></span>
                     <span className="relative z-10 flex items-center">
@@ -449,11 +443,11 @@ const PricingPage = () => {
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-[1.03] border border-gray-100 relative overflow-hidden"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                {/* Animated gradient background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#25D366]/5 to-[#1877F2]/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                {/* Animated background */}
+                <div className="absolute inset-0 bg-[#25D366]/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 
                 <div className="relative z-10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#25D366]/20 to-[#1877F2]/20 rounded-2xl flex items-center justify-center mb-6 transform hover:rotate-3 transition-transform">
+                  <div className="w-16 h-16 bg-[#25D366]/20 rounded-2xl flex items-center justify-center mb-6 transform hover:rotate-3 transition-transform">
                     <benefit.icon className="h-8 w-8 text-[#25D366]" />
                   </div>
                   
@@ -462,7 +456,7 @@ const PricingPage = () => {
                 </div>
                 
                 {/* Decorative elements */}
-                <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-to-br from-[#25D366]/10 to-[#1877F2]/10 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-[#25D366]/10 rounded-full blur-xl"></div>
               </div>
             ))}
           </div>
@@ -473,7 +467,7 @@ const PricingPage = () => {
       <section 
         id="faq-section"
         ref={sectionRefs.current.faq}
-        className={`py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white transition-all duration-1000 ${isVisible['faq-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'}`}
+        className={`py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 transition-all duration-1000 ${isVisible['faq-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'}`}
       >
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
@@ -521,7 +515,7 @@ const PricingPage = () => {
         className={`py-10 sm:py-16 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['cta-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'}`}
       >
         <div className="max-w-4xl mx-auto">
-          <div className="relative bg-gradient-to-br from-[#25D366] via-[#1da851] to-[#1877F2] rounded-3xl p-6 sm:p-10 text-white text-center overflow-hidden shadow-2xl">
+          <div className="relative bg-[#25D366] rounded-3xl p-6 sm:p-10 text-white text-center overflow-hidden shadow-2xl">
             {/* Animated background elements */}
             <div className="absolute inset-0 overflow-hidden">
               <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgzMCkiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIwLjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=')] opacity-30 animate-slide-bg"></div>

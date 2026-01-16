@@ -69,9 +69,9 @@ const FastIntegration = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white py-20">
+      <div className="bg-[#25D366] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -141,10 +141,10 @@ const FastIntegration = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Why Choose Our Integration Platform?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Built for developers, designed for speed, and optimized for reliability.
             </p>
           </div>
@@ -153,12 +153,12 @@ const FastIntegration = () => {
             {benefits.map((benefit, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center mr-4">
                     <benefit.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">{benefit.title}</h3>
+                  <h3 className="text-xl font-bold text-black">{benefit.title}</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+                <p className="text-gray-700 leading-relaxed">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -169,10 +169,10 @@ const FastIntegration = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Multiple Integration Options
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               Choose the integration method that works best for your tech stack
             </p>
           </div>
@@ -181,19 +181,19 @@ const FastIntegration = () => {
             {integrationMethods.map((method, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center mr-4">
                     <method.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">{method.title}</h3>
+                  <h3 className="text-xl font-bold text-black">{method.title}</h3>
                 </div>
-                
-                <p className="text-gray-600 mb-6">{method.description}</p>
-                
+
+                <p className="text-gray-700 mb-6">{method.description}</p>
+
                 <div className="space-y-2">
                   {method.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-[#25D366] mr-3 flex-shrink-0" />
-                      <span className="text-sm text-gray-600">{feature}</span>
+                      <span className="text-sm text-gray-700">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -207,10 +207,10 @@ const FastIntegration = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Popular Integrations
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               Connect with your favorite tools in just one click
             </p>
           </div>
@@ -219,7 +219,7 @@ const FastIntegration = () => {
             {popularIntegrations.map((integration, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 text-center">
                 <div className="text-4xl mb-3">{integration.logo}</div>
-                <h3 className="font-bold text-gray-900 mb-1">{integration.name}</h3>
+                <h3 className="font-bold text-black mb-1">{integration.name}</h3>
                 <p className="text-sm text-gray-500">{integration.category}</p>
               </div>
             ))}
@@ -231,10 +231,10 @@ const FastIntegration = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Developer-First Features
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               Everything developers need for seamless integration
             </p>
           </div>
@@ -253,7 +253,7 @@ const FastIntegration = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white">
+      <section className="py-20 bg-[#25D366] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
             Ready to Start Integrating?

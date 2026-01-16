@@ -162,9 +162,9 @@ const Integrations = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white py-20">
+      <div className="bg-[#25D366] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-6">60+ Native Integrations</h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto mb-8">
@@ -231,7 +231,7 @@ const Integrations = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Header */}
-              <div className={`h-2 bg-gradient-to-r ${integration.color}`}></div>
+              <div className={`h-2 ${integration.color}`}></div>
               
               <div className="p-8">
                 {/* Logo and Title */}
@@ -331,7 +331,7 @@ const Integrations = () => {
 
         {/* Custom Integration CTA */}
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-12 text-white">
+          <div className="bg-gray-900 rounded-2xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">Need a Custom Integration?</h3>
             <p className="text-xl mb-8 opacity-90">
               Can't find your integration? Our team will build it for you at no extra cost.

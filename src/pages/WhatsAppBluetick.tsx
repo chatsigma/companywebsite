@@ -499,8 +499,8 @@ function App() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-500 via-blue-500 to-green-400 text-white overflow-hidden min-h-screen flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10"></div>
+      <section className="relative bg-[#25D366] text-white overflow-hidden min-h-screen flex items-center">
+        <div className="absolute inset-0 bg-black/5"></div>
         
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
@@ -596,7 +596,7 @@ function App() {
                   ✅ Verified
                 </div>
                 <div className="flex items-center mb-2">
-                  <div className="w-6 h-6 md:w-8 md:h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full mr-2 flex items-center justify-center">
+                  <div className="w-6 h-6 md:w-8 md:h-8 bg-[#25D366] rounded-full mr-2 flex items-center justify-center">
                     <span className="text-white font-bold">B</span>
                   </div>
                   <div>
@@ -629,7 +629,7 @@ function App() {
       </section>
 
       {/* What is WhatsApp Bluetick */}
-      <section className="py-4 md:py-8 bg-gradient-to-r from-blue-50 via-green-50 to-blue-50 relative overflow-hidden">
+      <section className="py-4 md:py-8 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-3 left-3 md:top-10 md:left-10 w-6 h-6 md:w-20 md:h-20 bg-green-200/30 rounded-full animate-float"></div>
           <div className="absolute bottom-3 right-3 md:bottom-10 md:right-10 w-8 h-8 md:w-32 md:h-32 bg-blue-200/30 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
@@ -652,10 +652,10 @@ function App() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-4 md:py-8 bg-gradient-to-br from-white via-green-50 to-blue-50 relative">
+      <section className="py-4 md:py-8 bg-white relative">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-3 -left-3 md:-top-10 md:-left-10 w-10 h-10 md:w-40 md:h-40 bg-gradient-to-r from-green-400/20 to-blue-400/20 rounded-full animate-pulse"></div>
-          <div className="absolute -bottom-3 -right-3 md:-bottom-10 md:-right-10 w-15 h-15 md:w-60 md:h-60 bg-gradient-to-r from-blue-400/20 to-green-400/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute -top-3 -left-3 md:-top-10 md:-left-10 w-10 h-10 md:w-40 md:h-40 bg-[#25D366]/20 rounded-full animate-pulse"></div>
+          <div className="absolute -bottom-3 -right-3 md:-bottom-10 md:-right-10 w-15 h-15 md:w-60 md:h-60 bg-[#1877F2]/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-3">
@@ -666,19 +666,19 @@ function App() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
             {[
-              { icon: Shield, title: "Build Instant Trust & Credibility", desc: "Customers immediately recognize your business as legitimate and trustworthy", color: "from-green-500 to-blue-500" },
-              { icon: Building, title: "Show Brand Name Instead of Number", desc: "Your business name appears instead of just a phone number", color: "from-blue-500 to-green-500" },
-              { icon: Star, title: "Stand Out from Competitors", desc: "Be the verified business while competitors remain unverified", color: "from-green-500 to-blue-500" },
-              { icon: TrendingUp, title: "Higher Open & Reply Rates", desc: "Verified businesses see 40% higher engagement rates", color: "from-blue-500 to-green-500" },
-              { icon: Award, title: "Protect Your Brand Identity", desc: "Prevent impersonators from using your business name", color: "from-green-500 to-blue-500" },
-              { icon: Target, title: "Boost Conversions and Sales", desc: "Trusted businesses convert 5X better than unverified ones", color: "from-blue-500 to-green-500" }
+              { icon: Shield, title: "Build Instant Trust & Credibility", desc: "Customers immediately recognize your business as legitimate and trustworthy", color: "bg-[#25D366]" },
+              { icon: Building, title: "Show Brand Name Instead of Number", desc: "Your business name appears instead of just a phone number", color: "bg-[#1877F2]" },
+              { icon: Star, title: "Stand Out from Competitors", desc: "Be the verified business while competitors remain unverified", color: "bg-[#25D366]" },
+              { icon: TrendingUp, title: "Higher Open & Reply Rates", desc: "Verified businesses see 40% higher engagement rates", color: "bg-[#1877F2]" },
+              { icon: Award, title: "Protect Your Brand Identity", desc: "Prevent impersonators from using your business name", color: "bg-[#25D366]" },
+              { icon: Target, title: "Boost Conversions and Sales", desc: "Trusted businesses convert 5X better than unverified ones", color: "bg-[#1877F2]" }
             ].map((benefit, index) => (
               <div 
                 key={index} 
                 className="text-center p-3 md:p-4 rounded-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 bg-white/80 backdrop-blur-sm border border-white/20 animate-fade-in-up group"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className={`inline-flex items-center justify-center w-8 h-8 md:w-12 md:h-12 bg-gradient-to-r ${benefit.color} text-white rounded-full mb-2 md:mb-3 group-hover:animate-bounce shadow-lg`}>
+                <div className={`inline-flex items-center justify-center w-8 h-8 md:w-12 md:h-12 ${benefit.color} text-white rounded-full mb-2 md:mb-3 group-hover:animate-bounce shadow-lg`}>
                   <benefit.icon className="w-4 h-4 md:w-6 md:h-6" />
                 </div>
                 <h3 className="text-sm md:text-base font-bold text-gray-900 mb-1 md:mb-2 group-hover:text-green-600 transition-colors">{benefit.title}</h3>
@@ -690,9 +690,9 @@ function App() {
       </section>
 
       {/* Why Choose ChatSigma */}
-      <section className="py-8 md:py-12 bg-gradient-to-br from-green-500 via-blue-500 to-green-400 text-white relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-[#25D366] text-white relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/10 via-transparent to-black/10"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-black/5"></div>
           <div className="absolute top-10 left-10 w-16 h-16 bg-white/10 rounded-full animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-20 h-20 bg-white/10 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
@@ -727,9 +727,9 @@ function App() {
       </section>
 
       {/* Launch Offer */}
-      <section className="py-8 md:py-12 bg-gradient-to-br from-green-400 via-blue-400 to-green-500 text-white relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-[#25D366] text-white relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/20 via-transparent to-black/20"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-black/5"></div>
           <div className="absolute top-5 left-5 w-10 h-10 bg-white/20 rounded-full animate-ping"></div>
           <div className="absolute bottom-5 right-5 w-16 h-16 bg-white/20 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
         </div>
@@ -762,7 +762,7 @@ function App() {
       </section>
 
       {/* 3-Step Process */}
-      <section className="py-8 md:py-12 bg-gradient-to-br from-white via-blue-50 to-green-50 relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-white relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-12 h-12 bg-green-200/30 rounded-full animate-float"></div>
           <div className="absolute bottom-10 right-10 w-16 h-16 bg-blue-200/30 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
@@ -776,9 +776,9 @@ function App() {
           </h2>
           <div className="grid md:grid-cols-3 gap-4 md:gap-6">
             {[
-              { step: "1", icon: Phone, title: "Fill Form & Connect", desc: "Fill out our form and our team will get in touch with you within 24 hours", color: "from-green-500 to-blue-500" },
-              { step: "2", icon: Building, title: "ChatSigma Submits to Meta", desc: "We handle all the paperwork and submit your verification request to Meta", color: "from-blue-500 to-yellow-500" },
-              { step: "3", icon: Check, title: "Get Verified + Access", desc: "Get verified within 24 hours + immediate access to our automation platform", color: "from-green-500 to-blue-500" }
+              { step: "1", icon: Phone, title: "Fill Form & Connect", desc: "Fill out our form and our team will get in touch with you within 24 hours", color: "bg-[#25D366]" },
+              { step: "2", icon: Building, title: "ChatSigma Submits to Meta", desc: "We handle all the paperwork and submit your verification request to Meta", color: "bg-[#1877F2]" },
+              { step: "3", icon: Check, title: "Get Verified + Access", desc: "Get verified within 24 hours + immediate access to our automation platform", color: "bg-[#25D366]" }
             ].map((step, index) => (
               <div 
                 key={index} 
@@ -786,7 +786,7 @@ function App() {
                 style={{ animationDelay: `${index * 0.3}s` }}
               >
                 <div className="relative mb-4">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 bg-gradient-to-r ${step.color} text-white rounded-full text-xl md:text-2xl font-bold shadow-xl group-hover:animate-bounce`}>
+                  <div className={`inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 ${step.color} text-white rounded-full text-xl md:text-2xl font-bold shadow-xl group-hover:animate-bounce`}>
                     {step.step}
                   </div>
                   <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 inline-flex items-center justify-center w-8 h-8 md:w-10 md:h-10 bg-white border-2 md:border-3 border-green-500 rounded-full shadow-lg group-hover:animate-spin">
@@ -802,7 +802,7 @@ function App() {
       </section>
 
       {/* Testimonials Carousel */}
-      <section className="py-6 md:py-12 bg-gradient-to-r from-green-50 via-blue-50 to-green-50 overflow-hidden relative">
+      <section className="py-6 md:py-12 bg-gray-50 overflow-hidden relative">
         <div className="absolute inset-0">
           <div className="absolute top-3 left-3 md:top-10 md:left-10 w-8 h-8 md:w-32 md:h-32 bg-green-200/20 rounded-full animate-pulse"></div>
           <div className="absolute bottom-3 right-3 md:bottom-10 md:right-10 w-10 h-10 md:w-40 md:h-40 bg-blue-200/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
@@ -829,7 +829,7 @@ function App() {
       </section>
 
       {/* Form Section */}
-      <section id="form-section" className="py-8 md:py-12 bg-gradient-to-br from-green-50 via-blue-50 to-green-50 relative overflow-hidden">
+      <section id="form-section" className="py-8 md:py-12 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-12 h-12 bg-green-200/30 rounded-full animate-float"></div>
           <div className="absolute bottom-10 right-10 w-16 h-16 bg-blue-200/30 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
@@ -838,8 +838,8 @@ function App() {
         </div>
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-2xl mx-auto">
-            <div className="bg-gradient-to-r from-green-500 via-blue-500 to-green-400 p-4 md:p-6 rounded-t-2xl text-white text-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10"></div>
+            <div className="bg-[#25D366] p-4 md:p-6 rounded-t-2xl text-white text-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-black/5"></div>
               <div className="relative">
                 <div className="mb-2 md:mb-3">
                   <Zap className="w-8 h-8 md:w-12 md:h-12 mx-auto animate-bounce text-blue-200" />
@@ -1079,7 +1079,7 @@ function App() {
 
                 <button
                   type="submit"
-                    className="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-3 px-6 rounded-lg text-base transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-2xl relative z-30 pointer-events-auto cursor-pointer"
+                    className="w-full bg-[#25D366] text-white font-bold py-3 px-6 rounded-lg text-base transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-2xl relative z-30 pointer-events-auto cursor-pointer"
                 >
                   <Zap className="w-5 h-5" />
                   Get My Blue Tick Now
@@ -1103,7 +1103,7 @@ function App() {
             </button>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Check className="w-8 h-8 text-white" />
               </div>
               
@@ -1117,7 +1117,7 @@ function App() {
               
               <button
                 onClick={() => setShowPopup(false)}
-                className="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                className="w-full bg-[#25D366] text-white font-bold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105"
               >
                 Close
               </button>
@@ -1130,7 +1130,7 @@ function App() {
       <section className="py-8 md:py-12 bg-gray-50 relative">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-full mb-4">
+            <div className="inline-flex items-center justify-center w-12 h-12 bg-[#1877F2] text-white rounded-full mb-4">
               <Sparkles className="w-6 h-6" />
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
@@ -1153,9 +1153,9 @@ function App() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-8 md:py-12 bg-gradient-to-br from-green-500 via-blue-500 to-green-400 text-white relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-[#25D366] text-white relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/20 via-transparent to-black/20"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-black/5"></div>
           <div className="absolute top-5 left-5 w-16 h-16 bg-white/10 rounded-full animate-pulse"></div>
           <div className="absolute bottom-5 right-5 w-20 h-20 bg-white/10 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>

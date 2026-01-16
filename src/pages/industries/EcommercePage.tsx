@@ -48,9 +48,9 @@ const EcommercePage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#006AFF] text-white py-20">
+      <div className="bg-[#25D366] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -127,10 +127,10 @@ const EcommercePage = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Complete E-commerce Automation Suite
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               From order confirmations to customer support, automate every aspect of your e-commerce business with WhatsApp.
             </p>
           </div>
@@ -139,19 +139,19 @@ const EcommercePage = () => {
             {features.map((feature, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-xl flex items-center justify-center mr-4">
+                  <div className="w-12 h-12 bg-[#25D366] rounded-xl flex items-center justify-center mr-4">
                     <feature.icon className="h-6 w-6 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">{feature.title}</h3>
+                  <h3 className="text-xl font-bold text-black">{feature.title}</h3>
                 </div>
-                
-                <p className="text-gray-600 mb-6">{feature.description}</p>
-                
+
+                <p className="text-gray-700 mb-6">{feature.description}</p>
+
                 <div className="space-y-2">
                   {feature.benefits.map((benefit, benefitIndex) => (
                     <div key={benefitIndex} className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-[#25D366] mr-2" />
-                      <span className="text-sm text-gray-600">{benefit}</span>
+                      <span className="text-sm text-gray-700">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -165,10 +165,10 @@ const EcommercePage = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-black mb-4">
               Real-World Use Cases
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               See how leading e-commerce brands use ChatSigma to automate their WhatsApp communications
             </p>
           </div>
@@ -176,16 +176,16 @@ const EcommercePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {useCases.map((useCase, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{useCase.title}</h3>
-                <p className="text-gray-600 mb-6">{useCase.description}</p>
-                
+                <h3 className="text-xl font-bold text-black mb-4">{useCase.title}</h3>
+                <p className="text-gray-700 mb-6">{useCase.description}</p>
+
                 <div className="space-y-3">
                   {useCase.steps.map((step, stepIndex) => (
                     <div key={stepIndex} className="flex items-start">
                       <div className="w-6 h-6 bg-[#25D366] rounded-full flex items-center justify-center mr-3 mt-0.5">
                         <span className="text-white text-xs font-bold">{stepIndex + 1}</span>
                       </div>
-                      <span className="text-sm text-gray-600">{step}</span>
+                      <span className="text-sm text-gray-700">{step}</span>
                     </div>
                   ))}
                 </div>
@@ -198,7 +198,7 @@ const EcommercePage = () => {
       {/* CTA Section */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="bg-gradient-to-r from-[#25D366] to-[#006AFF] rounded-3xl p-12 text-white">
+          <div className="bg-[#25D366] rounded-3xl p-12 text-white">
             <h2 className="text-3xl font-bold mb-4">
               Ready to Transform Your E-commerce Business?
             </h2>
