@@ -83,10 +83,10 @@ const Hero = () => {
 
             {/* CTA buttons - Mobile optimized */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-2 lg:space-x-4 mb-3 sm:mb-4 md:mb-8 px-2 sm:px-3 lg:px-0">
-              <a 
-                href="https://app.chatsigma.com/auth/register/vendor" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://app.chatsigma.com/vb/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group w-full sm:w-auto btn-mobile sm:px-4 md:px-6 lg:px-8 sm:py-2.5 md:py-3 lg:py-4 bg-gradient-to-r from-[#25D366] to-[#1da851] text-white rounded-lg sm:text-sm md:text-base lg:text-lg font-semibold hover:from-[#1da851] hover:to-[#25D366] transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-lg hover:shadow-xl animate-pulse"
               >
                 Start Free Trial

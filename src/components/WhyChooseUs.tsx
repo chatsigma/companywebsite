@@ -189,7 +189,7 @@ const WhyChooseUs = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-3 md:space-x-4">
               <a 
-                href="https://app.chatsigma.com/auth/register/vendor" 
+                href="https://app.chatsigma.com/vb/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="w-full sm:w-auto btn-mobile sm:px-6 md:px-8 sm:py-3 md:py-4 bg-white text-[#25D366] rounded-lg font-semibold hover:bg-gray-50 transition-colors transform hover:scale-105 animate-blink"

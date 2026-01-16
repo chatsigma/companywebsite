@@ -32,7 +32,7 @@ const PricingPage = () => {
         'Mobile app access'
       ],
       cta: 'Start Free Trial',
-      ctaLink: 'https://app.chatsigma.com/auth/register/vendor'
+      ctaLink: 'https://app.chatsigma.com/vb/'
     },
     {
       name: 'Launch',
@@ -53,7 +53,7 @@ const PricingPage = () => {
         'Dedicated account manager'
       ],
       cta: 'Get Started',
-      ctaLink: 'https://app.chatsigma.com/auth/login'
+      ctaLink: 'https://app.chatsigma.com/vb/'
     },
     {
       name: 'Elevate',
@@ -75,7 +75,7 @@ const PricingPage = () => {
         'Quarterly strategy sessions'
       ],
       cta: 'Get Started',
-      ctaLink: 'https://app.chatsigma.com/auth/login'
+      ctaLink: 'https://app.chatsigma.com/vb/'
     },
     {
       name: 'Dominance',
@@ -98,7 +98,7 @@ const PricingPage = () => {
         'SLA guarantee'
       ],
       cta: 'Get Started',
-      ctaLink: 'https://app.chatsigma.com/auth/login'
+      ctaLink: 'https://app.chatsigma.com/vb/'
     }
   ];
   
@@ -121,7 +121,7 @@ const PricingPage = () => {
         'Mobile app access'
       ],
       cta: 'Start Free Trial',
-      ctaLink: 'https://app.chatsigma.com/auth/register/vendor'
+      ctaLink: 'https://app.chatsigma.com/vb/'
     },
     {
       name: 'Launch',
@@ -142,7 +142,7 @@ const PricingPage = () => {
         'Dedicated account manager'
       ],
       cta: 'Get Started',
-      ctaLink: 'https://app.chatsigma.com/auth/login'
+      ctaLink: 'https://app.chatsigma.com/vb/'
     },
     {
       name: 'Elevate',
@@ -164,7 +164,7 @@ const PricingPage = () => {
         'Quarterly strategy sessions'
       ],
       cta: 'Get Started',
-      ctaLink: 'https://app.chatsigma.com/auth/login'
+      ctaLink: 'https://app.chatsigma.com/vb/'
     },
     {
       name: 'Dominance',
@@ -187,7 +187,7 @@ const PricingPage = () => {
         'SLA guarantee'
       ],
       cta: 'Get Started',
-      ctaLink: 'https://app.chatsigma.com/auth/login'
+      ctaLink: 'https://app.chatsigma.com/vb/'
     }
   ];
   
@@ -541,8 +541,8 @@ const PricingPage = () => {
                 Start your 7-day free trial today. No credit card required.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <a 
-                  href="https://app.chatsigma.com/auth/register/vendor"
+                <a
+                  href="https://app.chatsigma.com/vb/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#25D366] rounded-xl text-base sm:text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center sm:min-w-[180px] relative overflow-hidden group"

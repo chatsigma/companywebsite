@@ -77,7 +77,7 @@ const Analytics = () => {
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <a 
-                  href="https://app.chatsigma.com/auth/register/vendor" 
+                  href="https://app.chatsigma.com/vb/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="px-8 py-4 bg-white text-[#25D366] rounded-lg font-semibold hover:bg-gray-50 transition-colors"
@@ -85,7 +85,7 @@ const Analytics = () => {
                   View Dashboard
                 </a>
                 <a 
-                  href="https://app.chatsigma.com/auth/register/vendor" 
+                  href="https://app.chatsigma.com/vb/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#25D366] transition-all"
@@ -237,7 +237,7 @@ const Analytics = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a 
-              href="https://app.chatsigma.com/auth/register/vendor" 
+              href="https://app.chatsigma.com/vb/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="px-8 py-4 bg-white text-[#25D366] rounded-lg font-semibold hover:bg-gray-50 transition-colors flex items-center"
@@ -246,7 +246,7 @@ const Analytics = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
             <a 
-              href="https://app.chatsigma.com/auth/register/vendor" 
+              href="https://app.chatsigma.com/vb/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#25D366] transition-all"
