@@ -1125,6 +1125,15 @@ html {
   letter-spacing: 0.5px;
 }
 
+/* Meta Badge - Similar style without animation */
+.meta-badge {
+  background: linear-gradient(135deg, #25D366 0%, #00D4AA 33%, #006AFF 66%, #25D366 100%);
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.3);
+}
+
 .animate-float-smooth {
   animation: float-smooth 6s ease-in-out infinite;
 }

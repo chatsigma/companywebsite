@@ -59,21 +59,23 @@ const Hero = () => {
           <div className="text-center lg:text-left overflow-mobile">
             {/* Badges Container - Both badges together */}
             <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
-              {/* V2 Badge - Slim version */}
+              {/* V2 Badge - Slim version with animation */}
               <div className="v2-badge px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full inline-flex items-center transform hover:scale-105 transition-transform duration-300">
                 <span className="v2-badge-text text-white text-xs sm:text-sm font-bold relative z-10 whitespace-nowrap">
                   Introducing ChatSigma V2
                 </span>
               </div>
 
-              {/* Meta Badge */}
-              <div className="inline-flex items-center px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 bg-gradient-to-r from-[#25D366]/20 to-[#006AFF]/20 rounded-full text-white text-xs font-medium border border-white/20 backdrop-blur-sm">
+              {/* Meta Badge - Similar style without animation */}
+              <div className="meta-badge px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full inline-flex items-center gap-2">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/2560px-Meta_Platforms_Inc._logo.svg.png"
                   alt="Meta"
-                  className="h-3 w-6 sm:h-3.5 sm:w-7 mr-1.5 sm:mr-2 object-contain"
+                  className="h-4 w-8 sm:h-4.5 sm:w-9 object-contain"
                 />
-                <span className="whitespace-nowrap">Meta Official Partner</span>
+                <span className="text-white text-xs sm:text-sm font-bold whitespace-nowrap">
+                  Meta Official Tech Partner
+                </span>
               </div>
             </div>
 
