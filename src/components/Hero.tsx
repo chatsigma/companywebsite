@@ -20,69 +20,61 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
-      {/* Enhanced Animated background elements with moving gradients */}
-      <div className="absolute inset-0">
-        <div className="absolute top-10 left-5 w-32 sm:w-48 md:w-72 h-32 sm:h-48 md:h-72 bg-[#25D366]/20 rounded-full blur-3xl animate-float-smooth"></div>
-        <div className="absolute bottom-10 right-5 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-[#006AFF]/20 rounded-full blur-3xl animate-wave"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-36 sm:w-56 md:w-80 h-36 sm:h-56 md:h-80 bg-[#00D4AA]/20 rounded-full blur-3xl animate-particle-float"></div>
+    <section className="relative min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+      {/* Professional Grid Pattern Overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(37,211,102,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(37,211,102,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
 
-        {/* Additional gradient orbs for depth */}
-        <div className="absolute top-1/4 right-1/4 w-24 sm:w-40 md:w-64 h-24 sm:h-40 md:h-64 bg-gradient-to-br from-[#25D366]/15 to-[#006AFF]/15 rounded-full blur-2xl animate-float-delay-1"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-28 sm:w-48 md:w-72 h-28 sm:h-48 md:h-72 bg-gradient-to-tl from-[#00D4AA]/15 to-[#25D366]/15 rounded-full blur-2xl animate-float-delay-2"></div>
+      {/* Subtle Professional Gradient Orbs */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-96 h-96 bg-[#25D366]/8 rounded-full blur-3xl animate-float-smooth"></div>
+        <div className="absolute bottom-20 right-10 w-[32rem] h-[32rem] bg-[#006AFF]/8 rounded-full blur-3xl animate-wave"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-[#00D4AA]/6 rounded-full blur-3xl"></div>
       </div>
 
-      {/* Enhanced Floating 3D elements with glass morphism */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/6 sm:left-1/4 glass-morphism rounded-lg sm:rounded-2xl p-2 sm:p-3 md:p-4 animate-float-smooth shadow-2xl transform rotate-12 card-3d-hover">
-          <div className="bg-gradient-to-br from-[#25D366] to-[#00D4AA] rounded-lg p-2">
-            <MessageCircle className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
-          </div>
+      {/* Professional Floating Icons */}
+      <div className="absolute inset-0 pointer-events-none opacity-40">
+        <div className="absolute top-1/4 left-[15%] bg-gradient-to-br from-[#25D366]/30 to-[#00D4AA]/30 backdrop-blur-sm rounded-xl p-3 animate-float-smooth shadow-xl border border-white/10">
+          <MessageCircle className="h-5 w-5 text-[#25D366]" />
         </div>
-        <div className="absolute top-1/3 right-1/6 sm:right-1/4 glass-morphism rounded-lg sm:rounded-2xl p-2 sm:p-3 md:p-4 animate-wave shadow-2xl transform -rotate-12 card-3d-hover">
-          <div className="bg-gradient-to-br from-[#006AFF] to-[#00D4AA] rounded-lg p-2">
-            <Bot className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
-          </div>
+        <div className="absolute top-[30%] right-[15%] bg-gradient-to-br from-[#006AFF]/30 to-[#00D4AA]/30 backdrop-blur-sm rounded-xl p-3 animate-wave shadow-xl border border-white/10">
+          <Bot className="h-5 w-5 text-[#006AFF]" />
         </div>
-        <div className="absolute bottom-1/3 left-1/4 sm:left-1/3 glass-morphism rounded-lg sm:rounded-2xl p-2 sm:p-3 md:p-4 animate-particle-float shadow-2xl transform rotate-6 card-3d-hover">
-          <div className="bg-gradient-to-br from-[#00D4AA] to-[#006AFF] rounded-lg p-2">
-            <BarChart3 className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
-          </div>
+        <div className="absolute bottom-[35%] left-[20%] bg-gradient-to-br from-[#00D4AA]/30 to-[#006AFF]/30 backdrop-blur-sm rounded-xl p-3 animate-particle-float shadow-xl border border-white/10">
+          <BarChart3 className="h-5 w-5 text-[#00D4AA]" />
         </div>
-        <div className="absolute top-1/2 right-1/4 sm:right-1/3 glass-morphism rounded-lg sm:rounded-2xl p-2 sm:p-3 md:p-4 animate-float-smooth shadow-2xl transform -rotate-6 card-3d-hover">
-          <div className="bg-gradient-to-br from-[#25D366] to-[#006AFF] rounded-lg p-2">
-            <Users className="h-4 w-4 sm:h-6 sm:w-6 text-white" />
-          </div>
+        <div className="absolute top-1/2 right-[20%] bg-gradient-to-br from-[#25D366]/30 to-[#006AFF]/30 backdrop-blur-sm rounded-xl p-3 animate-float-smooth shadow-xl border border-white/10">
+          <Users className="h-5 w-5 text-white" />
         </div>
+      </div>
 
-        {/* Additional floating particles */}
-        <div className="absolute top-20 right-1/3 w-2 h-2 sm:w-3 sm:h-3 bg-[#25D366] rounded-full animate-ping"></div>
-        <div className="absolute bottom-20 left-1/4 w-2 h-2 sm:w-3 sm:h-3 bg-[#006AFF] rounded-full animate-pulse"></div>
-        <div className="absolute top-1/2 left-1/6 w-2 h-2 sm:w-3 sm:h-3 bg-[#00D4AA] rounded-full animate-bounce"></div>
+      {/* Subtle Light Rays */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-[#25D366]/30 to-transparent"></div>
+        <div className="absolute top-0 right-1/3 w-px h-full bg-gradient-to-b from-transparent via-[#006AFF]/30 to-transparent"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 pt-16 sm:pt-20 md:pt-32 pb-8 sm:pb-12 md:pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left side - Content */}
           <div className="text-center lg:text-left overflow-mobile">
-            {/* V2 Badge - New animated badge */}
-            <div className="mb-3 sm:mb-4 flex justify-center lg:justify-start">
-              <div className="v2-badge px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-xl sm:rounded-2xl inline-flex items-center space-x-2 transform hover:scale-105 transition-transform duration-300">
-                <span className="v2-badge-text text-white text-sm sm:text-base md:text-lg font-bold relative z-10">
-                  ✨ Introducing ChatSigma V2
+            {/* Badges Container - Both badges together */}
+            <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
+              {/* V2 Badge - Slim version */}
+              <div className="v2-badge px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full inline-flex items-center transform hover:scale-105 transition-transform duration-300">
+                <span className="v2-badge-text text-white text-xs sm:text-sm font-bold relative z-10 whitespace-nowrap">
+                  Introducing ChatSigma V2
                 </span>
               </div>
-            </div>
 
-            {/* Meta Badge */}
-            <div className="inline-flex items-center px-2 sm:px-3 md:px-6 py-1 sm:py-1.5 md:py-3 bg-gradient-to-r from-[#25D366]/20 to-[#006AFF]/20 rounded-full text-white text-xs font-medium mb-3 sm:mb-4 md:mb-8 border border-white/20 backdrop-blur-sm mx-2">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/2560px-Meta_Platforms_Inc._logo.svg.png"
-                alt="Meta"
-                className="h-3 w-6 sm:h-4 sm:w-8 md:h-5 md:w-10 mr-1 sm:mr-1.5 md:mr-2 object-contain"
-              />
-              <span className="hidden sm:inline whitespace-nowrap">Meta Official Business Partner</span>
-              <span className="sm:hidden whitespace-nowrap">Meta Official Business Partner</span>
+              {/* Meta Badge */}
+              <div className="inline-flex items-center px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 bg-gradient-to-r from-[#25D366]/20 to-[#006AFF]/20 rounded-full text-white text-xs font-medium border border-white/20 backdrop-blur-sm">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/2560px-Meta_Platforms_Inc._logo.svg.png"
+                  alt="Meta"
+                  className="h-3 w-6 sm:h-3.5 sm:w-7 mr-1.5 sm:mr-2 object-contain"
+                />
+                <span className="whitespace-nowrap">Meta Official Partner</span>
+              </div>
             </div>
 
             {/* Main headline - Responsive text sizes */}
