@@ -998,6 +998,170 @@ html {
   }
 }
 
+/* V2 Badge Animated Gradient Border */
+@keyframes gradient-rotate-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 20px rgba(37, 211, 102, 0.6),
+      0 0 40px rgba(0, 106, 255, 0.4),
+      0 0 60px rgba(0, 212, 170, 0.3),
+      inset 0 0 20px rgba(37, 211, 102, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 30px rgba(0, 106, 255, 0.8),
+      0 0 60px rgba(37, 211, 102, 0.6),
+      0 0 80px rgba(0, 212, 170, 0.4),
+      inset 0 0 30px rgba(0, 106, 255, 0.3);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes text-glow-v2 {
+  0%, 100% {
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 20px rgba(37, 211, 102, 0.6),
+      0 0 30px rgba(0, 106, 255, 0.4);
+  }
+  50% {
+    text-shadow:
+      0 0 20px rgba(255, 255, 255, 1),
+      0 0 40px rgba(0, 106, 255, 0.8),
+      0 0 60px rgba(37, 211, 102, 0.6);
+  }
+}
+
+@keyframes float-smooth {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-15px) scale(1.05);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(10px) translateY(-10px);
+  }
+  50% {
+    transform: translateX(0) translateY(-20px);
+  }
+  75% {
+    transform: translateX(-10px) translateY(-10px);
+  }
+}
+
+@keyframes particle-float {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translate(50px, -50px) rotate(90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(100px, 0) rotate(180deg);
+    opacity: 0.8;
+  }
+  75% {
+    transform: translate(50px, 50px) rotate(270deg);
+    opacity: 1;
+  }
+}
+
+.v2-badge {
+  background: linear-gradient(135deg, #25D366 0%, #00D4AA 33%, #006AFF 66%, #25D366 100%);
+  background-size: 300% 300%;
+  animation: gradient-rotate-border 4s ease infinite, glow-pulse 3s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.v2-badge::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+}
+
+.v2-badge-text {
+  animation: text-glow-v2 2s ease-in-out infinite;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.animate-float-smooth {
+  animation: float-smooth 6s ease-in-out infinite;
+}
+
+.animate-wave {
+  animation: wave 4s ease-in-out infinite;
+}
+
+.animate-particle-float {
+  animation: particle-float 8s ease-in-out infinite;
+}
+
+/* Enhanced gradient backgrounds */
+.gradient-bg-animated {
+  background: linear-gradient(135deg, #25D366 0%, #00D4AA 50%, #006AFF 100%);
+  background-size: 200% 200%;
+  animation: gradient-rotate-border 8s ease infinite;
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Advanced card hover effects */
+.card-3d-hover {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-3d-hover:hover {
+  transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(37, 211, 102, 0.2);
+}
+
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
   * {
