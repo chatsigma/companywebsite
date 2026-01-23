@@ -11,6 +11,7 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import Integrations from './components/Integrations';
+import { WhatsAppWidget } from './components/WhatsAppWidget';
 import QRGenerator from './tools/QRGenerator';
 import MessageLink from './tools/MessageLink';
 import ChatButton from './tools/ChatButton';
@@ -662,6 +663,7 @@ function App() {
           } />
         </Routes>
         <Footer />
+        <WhatsAppWidget />
       </div>
     </Router>
   );
