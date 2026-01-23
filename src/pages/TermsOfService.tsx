@@ -3,9 +3,9 @@ import { FileText, Scale, AlertTriangle, CheckCircle, Shield, Users, CreditCard,
 
 const TermsOfService = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white py-20">
+      <div className="bg-[#25D366] text-white py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative inline-block mb-6">
             <div className="w-24 h-24 bg-white/20 rounded-3xl flex items-center justify-center mx-auto transform hover:scale-110 transition-transform duration-300 shadow-2xl backdrop-blur-sm">
@@ -34,7 +34,7 @@ const TermsOfService = () => {
         {/* Section 1: Acceptance of Terms */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#25D366] to-green-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <CheckCircle className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">1. Acceptance of Terms</h2>
@@ -53,7 +53,7 @@ const TermsOfService = () => {
         {/* Section 2: Service Description */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#1877F2] to-blue-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <FileText className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">2. Service Description</h2>
@@ -94,7 +94,7 @@ const TermsOfService = () => {
         {/* Section 3: User Accounts */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#25D366] to-green-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <Users className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">3. User Accounts</h2>
@@ -131,7 +131,7 @@ const TermsOfService = () => {
         {/* Section 4: Privacy Policy */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#1877F2] to-blue-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <Shield className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">4. Privacy Policy</h2>
@@ -151,7 +151,7 @@ const TermsOfService = () => {
         {/* Section 5: Fees and Payments */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#25D366] to-green-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <CreditCard className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">5. Fees and Payments</h2>
@@ -188,7 +188,7 @@ const TermsOfService = () => {
         {/* Section 6: Intellectual Property */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#1877F2] to-blue-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <Copyright className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">6. Intellectual Property</h2>
@@ -323,7 +323,7 @@ const TermsOfService = () => {
         {/* Section 10: Governing Law */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#1877F2] to-blue-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <Gavel className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">10. Governing Law</h2>
@@ -343,7 +343,7 @@ const TermsOfService = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="bg-gradient-to-br from-[#25D366] to-[#1877F2] rounded-3xl shadow-xl p-8 md:p-12 text-white">
+        <div className="bg-[#25D366] rounded-3xl shadow-xl p-8 md:p-12 text-white">
           <div className="flex items-center mb-6">
             <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mr-4 backdrop-blur-sm">
               <Lock className="h-7 w-7 text-white" />

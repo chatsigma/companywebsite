@@ -3,9 +3,9 @@ import { Shield, Lock, Eye, FileText, Database, Share2, UserCheck, Baby, Refresh
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-green-50">
+    <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[#25D366] to-[#1877F2] text-white py-20">
+      <div className="bg-[#25D366] text-white py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="relative inline-block mb-6">
             <div className="w-24 h-24 bg-white/20 rounded-3xl flex items-center justify-center mx-auto transform hover:scale-110 transition-transform duration-300 shadow-2xl backdrop-blur-sm">
@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
         {/* Section 1: Information We Collect */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#25D366] to-green-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <Database className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">Information We Collect</h2>
@@ -121,7 +121,7 @@ const PrivacyPolicy = () => {
         {/* Section 2: How We Use Your Information */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#1877F2] to-blue-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <Lock className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">How We Use Your Information</h2>
@@ -164,7 +164,7 @@ const PrivacyPolicy = () => {
         {/* Section 3: Data Sharing */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#25D366] to-green-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <Share2 className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">Data Sharing and Disclosure</h2>
@@ -198,7 +198,7 @@ const PrivacyPolicy = () => {
         {/* Section 4: Data Security */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#1877F2] to-blue-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <Shield className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">Data Security</h2>
@@ -241,7 +241,7 @@ const PrivacyPolicy = () => {
         {/* Section 5: Your Rights and Choices */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#25D366] to-green-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <UserCheck className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">Your Rights and Choices</h2>
@@ -287,7 +287,7 @@ const PrivacyPolicy = () => {
         {/* Section 6: Children's Privacy */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#1877F2] to-blue-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <Baby className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">Children's Privacy</h2>
@@ -307,7 +307,7 @@ const PrivacyPolicy = () => {
         {/* Section 7: Changes to Privacy Policy */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#25D366] to-green-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <RefreshCw className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">Changes to This Privacy Policy</h2>
@@ -330,7 +330,7 @@ const PrivacyPolicy = () => {
         {/* Section 8: Contact Us */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-8 hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center mb-6">
-            <div className="w-14 h-14 bg-gradient-to-br from-[#1877F2] to-blue-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+            <div className="w-14 h-14 bg-[#25D366] rounded-2xl flex items-center justify-center mr-4 shadow-lg">
               <Mail className="h-7 w-7 text-white" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">Contact Us</h2>
@@ -353,7 +353,7 @@ const PrivacyPolicy = () => {
         </div>
 
         {/* Section 9: Governing Law */}
-        <div className="bg-gradient-to-br from-[#25D366] to-[#1877F2] rounded-3xl shadow-xl p-8 md:p-12 text-white">
+        <div className="bg-[#25D366] rounded-3xl shadow-xl p-8 md:p-12 text-white">
           <div className="flex items-center mb-6">
             <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mr-4 backdrop-blur-sm">
               <Gavel className="h-7 w-7 text-white" />
