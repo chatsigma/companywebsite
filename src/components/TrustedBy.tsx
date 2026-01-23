@@ -1,38 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Building2 } from 'lucide-react';
 
 const TrustedBy = () => {
+  const [imageErrors, setImageErrors] = useState<{[key: number]: boolean}>({});
+
   const companies = [
-    { 
-      name: 'Trusted Partner 1', 
+    {
+      name: 'Trusted Partner 1',
       logo: '/2.PNG',
-      color: '#25D366'
+      color: '#25D366',
+      fallbackText: 'TP1'
     },
-    { 
-      name: 'Trusted Partner 2', 
+    {
+      name: 'Trusted Partner 2',
       logo: '/6.jpg',
-      color: '#006AFF'
+      color: '#006AFF',
+      fallbackText: 'TP2'
     },
-    { 
-      name: 'Trusted Partner 3', 
+    {
+      name: 'Trusted Partner 3',
       logo: '/LAST 3.jpg',
-      color: '#9C27B0'
+      color: '#9C27B0',
+      fallbackText: 'TP3'
     },
-    { 
-      name: 'Trusted Partner 4', 
+    {
+      name: 'Trusted Partner 4',
       logo: '/5.PNG',
-      color: '#FF9800'
+      color: '#FF9800',
+      fallbackText: 'TP4'
     },
-    { 
-      name: 'Trusted Partner 5', 
+    {
+      name: 'Trusted Partner 5',
       logo: '/1.png',
-      color: '#F44336'
+      color: '#F44336',
+      fallbackText: 'TP5'
     },
-    { 
-      name: 'Trusted Partner 6', 
+    {
+      name: 'Trusted Partner 6',
       logo: '/3.jpg',
-      color: '#4CAF50'
+      color: '#4CAF50',
+      fallbackText: 'TP6'
     }
   ];
+
+  const handleImageError = (index: number) => {
+    setImageErrors(prev => ({ ...prev, [index]: true }));
+  };
 
   return (
     <section className="py-6 sm:py-8 md:py-12 bg-white">
@@ -70,20 +83,29 @@ const TrustedBy = () => {
                       e.currentTarget.style.boxShadow = '';
                     }}
                   >
-                    {/* Company Logo */}
-                    <img
-                      src={company.logo}
-                      alt={company.name}
-                      className="h-10 sm:h-14 md:h-18 w-auto max-w-[100px] sm:max-w-[160px] md:max-w-[200px] object-contain transition-all duration-300"
-                      loading="eager"
-                      onError={(e) => {
-                        console.error('Failed to load logo:', company.logo);
-                        e.currentTarget.style.display = 'block';
-                      }}
-                    />
+                    {/* Company Logo or Fallback */}
+                    {imageErrors[index] ? (
+                      <div className="flex flex-col items-center justify-center h-full w-full">
+                        <div
+                          className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white"
+                          style={{ backgroundColor: company.color }}
+                        >
+                          <Building2 className="w-6 h-6 sm:w-8 sm:h-8" />
+                        </div>
+                        <span className="text-xs mt-2 text-gray-600 font-semibold text-center px-2">{company.name}</span>
+                      </div>
+                    ) : (
+                      <img
+                        src={company.logo}
+                        alt={company.name}
+                        className="h-10 sm:h-14 md:h-18 w-auto max-w-[100px] sm:max-w-[160px] md:max-w-[200px] object-contain transition-all duration-300"
+                        loading="eager"
+                        onError={() => handleImageError(index)}
+                      />
+                    )}
 
                     {/* Brand color accent */}
-                    <div 
+                    <div
                       className="absolute bottom-0 left-0 right-0 h-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                       style={{ backgroundColor: company.color }}
                     ></div>
