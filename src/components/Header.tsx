@@ -81,9 +81,9 @@ const Header = () => {
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img
-                src="/1%20copy.png"
+                src="/2%20copy.png"
                 alt="ChatSigma Logo"
-                className="h-8 sm:h-10 object-contain drop-shadow-sm"
+                className="h-10 sm:h-12 md:h-14 w-auto object-contain drop-shadow-sm"
                 loading="eager"
               />
             </Link>
