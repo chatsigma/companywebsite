@@ -76,14 +76,14 @@ const Header = () => {
       isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'
     } border-b border-gray-100`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 sm:h-24 md:h-28 lg:h-32">
+        <div className="flex items-center justify-between h-16 sm:h-18 md:h-20 lg:h-24">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img
-                src="/2%20copy.png"
+                src="/cs_logo_web.jpeg"
                 alt="ChatSigma Logo"
-                className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto object-contain drop-shadow-sm"
+                className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain drop-shadow-sm"
                 loading="eager"
               />
             </Link>
