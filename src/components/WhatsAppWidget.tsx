@@ -19,50 +19,49 @@ export const WhatsAppWidget: React.FC = () => {
     <>
       {isExpanded ? (
         <div className="fixed bottom-6 right-6 z-50 animate-slideIn">
-          <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden max-w-[320px] group hover:shadow-[0_20px_60px_rgba(37,211,102,0.4)] transition-all duration-500 animate-float">
+          <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden w-[260px] group hover:shadow-[0_20px_60px_rgba(37,211,102,0.4)] transition-all duration-500 animate-float">
             <div className="absolute inset-0 bg-gradient-to-br from-[#25D366] via-[#25D366] to-[#128C7E] opacity-100"></div>
 
             <button
               onClick={() => setIsExpanded(false)}
-              className="absolute top-3 right-3 p-1.5 hover:bg-white/20 rounded-full transition-all duration-200 z-10 hover:rotate-90"
+              className="absolute top-2.5 right-2.5 p-1 hover:bg-white/20 rounded-full transition-all duration-200 z-10 hover:rotate-90"
               aria-label="Close widget"
             >
-              <X className="w-4 h-4 text-white" />
+              <X className="w-3.5 h-3.5 text-white" />
             </button>
 
             <button
               onClick={handleWhatsAppClick}
-              className="relative w-full p-5 flex items-start gap-4 hover:bg-white/10 transition-all duration-300 group"
+              className="relative w-full p-4 flex items-start gap-3 hover:bg-white/10 transition-all duration-300 group"
             >
-              <div className="relative flex-shrink-0 mt-1">
-                <div className="absolute -inset-1 bg-white/40 rounded-full animate-ping-slow"></div>
-                <div className="absolute -inset-0.5 bg-white/30 rounded-full animate-pulse"></div>
-                <div className="relative bg-white p-3 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <MessageCircle className="w-7 h-7 text-[#25D366]" fill="currentColor" />
+              <div className="relative flex-shrink-0">
+                <div className="absolute -inset-0.5 bg-white/40 rounded-full animate-ping-slow"></div>
+                <div className="relative bg-white p-2 rounded-full shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <MessageCircle className="w-6 h-6 text-[#25D366]" fill="currentColor" />
                 </div>
-                <div className="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-[#10B981] border-2 border-white rounded-full animate-pulse"></div>
+                <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-[#10B981] border-2 border-white rounded-full animate-pulse"></div>
               </div>
 
-              <div className="flex-1 text-left pr-4">
-                <div className="flex items-center gap-2 mb-1.5">
-                  <div className="text-base font-bold text-white leading-tight tracking-wide">
-                    We're Here to Help 24/7
+              <div className="flex-1 text-left pr-3">
+                <div className="flex items-center gap-1.5 mb-1">
+                  <div className="text-sm font-bold text-white leading-tight">
+                    We're Here 24/7
                   </div>
-                  <Sparkles className="w-4 h-4 text-yellow-300 animate-pulse" />
+                  <Sparkles className="w-3.5 h-3.5 text-yellow-300 animate-pulse" />
                 </div>
-                <div className="text-sm text-white/95 leading-relaxed font-medium mb-2">
-                  Talk to Our Agents Now
+                <div className="text-xs text-white/95 leading-relaxed font-medium mb-1.5">
+                  Talk to Our Agents
                 </div>
-                <div className="inline-flex items-center gap-1.5 text-xs text-white/90 bg-white/20 px-3 py-1.5 rounded-full backdrop-blur-sm">
-                  <div className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse"></div>
-                  <span className="font-semibold">Online</span>
+                <div className="inline-flex items-center gap-1.5 text-xs text-white/90 bg-white/20 px-2.5 py-1 rounded-full backdrop-blur-sm">
+                  <div className="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse"></div>
+                  <span className="font-semibold text-[11px]">Online</span>
                 </div>
               </div>
             </button>
 
-            <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shimmer"></div>
+            <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shimmer"></div>
 
-            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-white/10 to-transparent pointer-events-none"></div>
+            <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-white/10 to-transparent pointer-events-none"></div>
           </div>
         </div>
       ) : (
