@@ -81,33 +81,11 @@ const Header = () => {
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img
-                src="/chatsigma-logo.svg"
+                src="/1 copy.png"
                 alt="ChatSigma Logo"
-                className="h-8 w-8 sm:h-10 sm:w-10 mr-2 sm:mr-3 object-contain drop-shadow-sm"
-                onError={(e) => {
-                  // Fallback: Try PNG, then show icon
-                  const target = e.currentTarget;
-                  if (target.src.includes('.svg')) {
-                    target.src = '/CHAT_SIGMA_LOGO-removebg-preview.png';
-                  } else {
-                    target.style.display = 'none';
-                    const fallbackIcon = target.nextElementSibling as HTMLElement;
-                    if (fallbackIcon && fallbackIcon.classList.contains('logo-fallback')) {
-                      fallbackIcon.style.display = 'flex';
-                    }
-                  }
-                }}
+                className="h-8 sm:h-10 object-contain drop-shadow-sm"
                 loading="eager"
               />
-              <div
-                className="logo-fallback hidden h-8 w-8 sm:h-10 sm:w-10 mr-2 sm:mr-3 items-center justify-center bg-gradient-to-br from-[#25D366] to-[#1da851] rounded-lg text-white font-bold text-sm sm:text-base shadow-lg"
-                style={{ display: 'none' }}
-              >
-                CS
-              </div>
-              <span className="text-xl sm:text-2xl font-bold text-black">
-                ChatSigma
-              </span>
             </Link>
           </div>
 

@@ -48,12 +48,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
-              <img 
-                src="/CHAT_SIGMA_LOGO-removebg-preview.png" 
-                alt="ChatSigma" 
-                className="h-8 w-8"
+              <img
+                src="/2.png"
+                alt="ChatSigma Icon"
+                className="h-10 w-10"
               />
-              <span className="ml-2 text-xl sm:text-2xl font-bold">ChatSigma</span>
+              <span className="ml-3 text-xl sm:text-2xl font-bold">ChatSigma</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
               The most powerful WhatsApp Business API platform for automating customer conversations and growing your business.

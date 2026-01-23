@@ -98,7 +98,7 @@ const QRGenerator = () => {
           <div className="relative inline-block mb-6">
             <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto transform hover:scale-110 transition-transform duration-300">
               <img 
-                src="/CHAT_SIGMA_LOGO-removebg-preview.png" 
+                src="/2.png" 
                 alt="Chat Sigma" 
                 className="h-10 w-10"
               />

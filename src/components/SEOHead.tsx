@@ -26,7 +26,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   title = "ChatSigma - Official WhatsApp Business API & Automation Platform | 0% Markup",
   description = "Automate WhatsApp conversations, manage leads, and boost sales with ChatSigma's official WhatsApp Business API. 0% markup pricing, AI chatbot, bulk messaging, and analytics. Start your 14-day free trial today.",
   keywords = "WhatsApp Business API, WhatsApp Automation, WhatsApp Chatbot, AI Chatbot, Bulk Messaging, WhatsApp Marketing, Business Messaging, Chat Automation, WhatsApp API, Business Communication, Customer Engagement, Lead Management",
-  image = "https://chatsigma.com/CHAT_SIGMA_LOGO-removebg-preview.png",
+  image = "https://chatsigma.com/1 copy.png",
   url = "https://chatsigma.com/",
   type = "website",
   schemaData,
@@ -39,7 +39,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
     "name": "ChatSigma Technologies (OPC) Private Limited",
     "alternateName": "ChatSigma",
     "url": "https://chatsigma.com",
-    "logo": "https://chatsigma.com/CHAT_SIGMA_LOGO-removebg-preview.png",
+    "logo": "https://chatsigma.com/1 copy.png",
     "description": "Official WhatsApp Business API platform for automating customer conversations and growing businesses efficiently.",
     "foundingDate": "2024",
     "founders": [
@@ -221,7 +221,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
             "name": "ChatSigma Technologies (OPC) Private Limited",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://chatsigma.com/CHAT_SIGMA_LOGO-removebg-preview.png"
+              "url": "https://chatsigma.com/1 copy.png"
             }
           }
         })}
