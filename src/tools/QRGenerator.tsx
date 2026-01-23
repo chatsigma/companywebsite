@@ -66,7 +66,7 @@ const QRGenerator = () => {
     if (!phoneNumber) return;
 
     const cleanNumber = phoneNumber.replace(/[^\d+]/g, '');
-    const waLink = `https://wa.me/${cleanNumber}`;
+    const waLink = cleanNumber ? `https://wa.me/${cleanNumber}` : 'https://wa.me/919220304943?text=Hey%20Team%20Chatsigma%20I%20want%20to%20automate%20my%20business%20via%20ChatSigma';
     setGeneratedLink(waLink);
 
     const dataUrl = await generateQR(waLink);

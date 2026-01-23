@@ -3,37 +3,37 @@
   <!-- Main Pages -->
   <url>
     <loc>https://chatsigma.com/</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/about</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/pricing</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/contact</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/integrations</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/api-documentation</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -41,87 +41,203 @@
   <!-- Industry Pages -->
   <url>
     <loc>https://chatsigma.com/industries/ecommerce</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/industries/healthcare</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/industries/finance</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/industries/education</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/industries/real-estate</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/industries/hospitality</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/aviation</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/automotive</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/retail</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/manufacturing</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/logistics</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/travel</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/insurance</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/legal</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/telecom</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/media</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/non-profit</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/industries/government</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Feature Pages -->
+  <url>
+    <loc>https://chatsigma.com/features/whatsapp-business-api</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/features/ai-chatbot</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/features/bulk-messaging</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/features/analytics</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/features/team-collaboration</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/features/business-automation</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://chatsigma.com/features/fast-integration</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Tools Pages -->
   <url>
     <loc>https://chatsigma.com/tools/qr-generator</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/tools/message-link</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/tools/chat-button</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/tools/group-link</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/tools/bio-generator</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/tools/number-validator</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/tools/cta-generator</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/tools/auto-reply</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -129,7 +245,7 @@
   <!-- Special Pages -->
   <url>
     <loc>https://chatsigma.com/whatsapp-bluetick-verification</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -137,43 +253,43 @@
   <!-- Resource Pages -->
   <url>
     <loc>https://chatsigma.com/resources/help-center</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/resources/getting-started</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/resources/video-tutorials</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/resources/case-studies</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/resources/webinars</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/resources/best-practices</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/resources/community</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -181,19 +297,19 @@
   <!-- Legal Pages -->
   <url>
     <loc>https://chatsigma.com/privacy-policy</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/terms-of-service</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://chatsigma.com/cookie-policy</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

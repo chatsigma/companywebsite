@@ -136,7 +136,7 @@ const FAQ = () => {
             <p className="text-gray-600 mb-3 sm:mb-4 md:mb-6 text-sm sm:text-base md:text-lg">
               Still have questions? We're here to help.
             </p>
-            <a href="https://wa.me/919220304943?text=Hi%20Team%20ChatSigma%2C%20I%20want%20support" target="_blank" rel="noopener noreferrer" className="inline-block px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-[#25D366] text-white rounded-lg font-semibold hover:bg-[#1da851] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-xs sm:text-sm md:text-base">
+            <a href="https://wa.me/919220304943?text=Hey%20Team%20Chatsigma%20I%20want%20to%20automate%20my%20business%20via%20ChatSigma" target="_blank" rel="noopener noreferrer" className="inline-block px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-[#25D366] text-white rounded-lg font-semibold hover:bg-[#1da851] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-xs sm:text-sm md:text-base">
               Contact Support
             </a>
           </div>

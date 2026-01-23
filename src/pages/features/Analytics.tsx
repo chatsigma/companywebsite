@@ -245,10 +245,10 @@ const Analytics = () => {
               View Dashboard
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
-            <a 
-              href="https://app.chatsigma.com/vb/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://calendly.com/chatsigma-info/new-meeting"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#25D366] transition-all"
             >
               Schedule Demo

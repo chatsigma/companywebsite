@@ -86,7 +86,7 @@ const CTAGenerator = () => {
       font-size: ${currentSize.fontSize};
     ">${description}</p>` : ''}
     
-    <a href="https://wa.me/1234567890" target="_blank" style="
+    <a href="https://wa.me/919220304943?text=Hey%20Team%20Chatsigma%20I%20want%20to%20automate%20my%20business%20via%20ChatSigma" target="_blank" style="
       display: inline-block;
       background: rgba(255,255,255,0.2);
       color: white;

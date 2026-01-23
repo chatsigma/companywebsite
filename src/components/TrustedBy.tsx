@@ -71,10 +71,15 @@ const TrustedBy = () => {
                     }}
                   >
                     {/* Company Logo */}
-                    <img 
-                      src={company.logo} 
+                    <img
+                      src={company.logo}
                       alt={company.name}
                       className="h-10 sm:h-14 md:h-18 w-auto max-w-[100px] sm:max-w-[160px] md:max-w-[200px] object-contain transition-all duration-300"
+                      loading="eager"
+                      onError={(e) => {
+                        console.error('Failed to load logo:', company.logo);
+                        e.currentTarget.style.display = 'block';
+                      }}
                     />
 
                     {/* Brand color accent */}

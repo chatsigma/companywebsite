@@ -102,7 +102,7 @@ const Hero = () => {
                 </span>
               </a>
               <a
-                href="https://calendly.com/contactchatsigma/whatsapp-automation-with-chatsigma"
+                href="https://youtube.com/@thechatsigma?si=L2Y-0Y7xbofmMHI_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group w-full sm:w-auto btn-mobile sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 bg-white hover:bg-gray-50 text-[#25D366] border-2 border-[#25D366] rounded-xl sm:text-sm md:text-base lg:text-lg font-bold transition-all duration-300 transform hover:scale-105 flex items-center justify-center shadow-lg hover:shadow-xl"

@@ -547,8 +547,8 @@ const PricingPage = () => {
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </span>
                 </a>
-                <a 
-                  href="https://calendly.com/contactchatsigma/whatsapp-automation-with-chatsigma"
+                <a
+                  href="https://calendly.com/chatsigma-info/new-meeting"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white rounded-xl text-base sm:text-lg font-semibold hover:bg-white/10 transition-all duration-300 transform hover:scale-105 flex items-center justify-center sm:min-w-[180px] relative overflow-hidden group"

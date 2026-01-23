@@ -320,7 +320,7 @@ function App() {
     }
     
     try {
-      const whatsappUrl = `https://wa.me/6281234567890?text=Hi! I want to get my WhatsApp Business verified with blue tick. Business: ${formData.businessName}, Email: ${formData.email}, Phone: ${formData.phoneCountryCode}${formData.phoneNumber}`;
+      const whatsappUrl = `https://wa.me/919220304943?text=Hey%20Team%20Chatsigma%20I%20want%20to%20automate%20my%20business%20via%20ChatSigma`;
       // Send data to Google Sheets
       const payload = {
         "Full Name": formData.fullName,
@@ -450,7 +450,7 @@ function App() {
       name: "Meera Joshi",
       designation: "Brand Manager",
       company: "Organic Foods Co",
-      testimonial: "The automation platform they gave free for 3 months helped us save hours daily. Highly recommended!",
+      testimonial: "The verification process was smooth and quick. Our customers now trust us more and engagement has increased significantly!",
       avatar: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1"
     },
     {
@@ -480,7 +480,7 @@ function App() {
     },
     {
       question: "Is it really a one-time fee with no hidden charges?",
-      answer: "Yes! ₹15,000 is the complete one-time fee for WhatsApp Business verification. No hidden charges, no recurring fees. Plus you get 3 months free access to our automation platform."
+      answer: "Yes! ₹15,999 is the complete one-time fee for WhatsApp Business verification. No hidden charges, no recurring fees."
     },
     {
       question: "Do I need Facebook Business Manager?",
@@ -491,8 +491,8 @@ function App() {
       answer: "We have a 95% success rate, but if your application gets rejected, we'll work with you to fix the issues and resubmit at no extra cost."
     },
     {
-      question: "Can I use the automation platform after 3 months?",
-      answer: "After the free 3-month period, you can continue using our automation platform at discounted rates. Many clients find it so valuable they upgrade immediately."
+      question: "What happens after I get verified?",
+      answer: "After verification, your WhatsApp Business account will display the blue tick badge, confirming your business is authentic and verified by Meta."
     }
   ];
 
@@ -530,7 +530,7 @@ function App() {
               <span className="block text-yellow-300 font-semibold text-xl md:text-3xl lg:text-5xl animate-typing overflow-hidden whitespace-nowrap border-r-2 border-yellow-300">Build Instant Trust & 5X Your Sales!</span>
             </h1>
             <p className="text-sm md:text-lg lg:text-xl mb-4 md:mb-6 animate-fade-in-up px-2" style={{ animationDelay: '0.3s' }}>
-              Only <span className="text-white font-bold animate-bounce">₹15,000</span> one-time — plus <span className="text-white font-bold animate-bounce">3 months free</span> access to ChatSigma Business Automation Platform
+              Only <span className="text-white font-bold animate-bounce">₹15,999</span> one-time payment
             </p>
             
             {/* Stats Counter */}
@@ -707,8 +707,8 @@ function App() {
             {[
               { icon: Star, title: "Official Meta Tech Partner", desc: "Officially recognized by Meta as their official tech partner", color: "bg-blue-400" },
               { icon: Clock, title: "Fast Approval Process", desc: "Get verified within 24-48 hours with our streamlined process", color: "bg-green-400" },
-              { icon: Check, title: "₹15,000 One-time Fee", desc: "No hidden charges, no recurring fees. Just one payment for lifetime verification", color: "bg-blue-400" },
-              { icon: Users, title: "3 Months Free Automation", desc: "Free access to our powerful ChatSigma Business Automation Platform worth ₹25,000", color: "bg-green-400" }
+              { icon: Check, title: "₹15,999 One-time Fee", desc: "No hidden charges, no recurring fees. Just one payment for lifetime verification", color: "bg-blue-400" },
+              { icon: Users, title: "Expert Support Team", desc: "Dedicated support team to guide you through the entire verification process", color: "bg-green-400" }
             ].map((feature, index) => (
               <div 
                 key={index} 
@@ -741,10 +741,10 @@ function App() {
               </PulsingBadge>
             </div>
             <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 text-white">
-              One-time Verification for ₹15,000 + 3 Months Free Access to ChatSigma Business Automation Platform
+              Get Your WhatsApp Blue Tick Verification for Only ₹15,999
             </h2>
             <p className="text-sm md:text-lg mb-4 md:mb-6 text-white font-medium opacity-90">
-              Regular price <span className="line-through text-gray-300">₹25,000</span> + <span className="line-through text-gray-300">₹25,000</span> automation = <span className="text-white font-bold text-lg md:text-xl">₹50,000 value</span>
+              One-time payment - No hidden charges, no recurring fees
             </p>
             <div className="text-sm md:text-base text-white font-medium mb-4 md:mb-6">
               ⏰ Only <span className="text-white font-bold text-lg md:text-xl">50 slots</span> available this month
@@ -778,7 +778,7 @@ function App() {
             {[
               { step: "1", icon: Phone, title: "Fill Form & Connect", desc: "Fill out our form and our team will get in touch with you within 24 hours", color: "bg-[#25D366]" },
               { step: "2", icon: Building, title: "ChatSigma Submits to Meta", desc: "We handle all the paperwork and submit your verification request to Meta", color: "bg-[#1877F2]" },
-              { step: "3", icon: Check, title: "Get Verified + Access", desc: "Get verified within 24 hours + immediate access to our automation platform", color: "bg-[#25D366]" }
+              { step: "3", icon: Check, title: "Get Verified", desc: "Get verified within 24-48 hours and start building trust with your customers", color: "bg-[#25D366]" }
             ].map((step, index) => (
               <div 
                 key={index} 

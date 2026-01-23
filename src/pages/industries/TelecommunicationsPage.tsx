@@ -1,50 +1,62 @@
 import React from 'react';
-import { ShoppingBag, TrendingUp, Users, MessageCircle, CheckCircle, ArrowRight, Zap, BarChart3 } from 'lucide-react';
+import { Smartphone, TrendingUp, Users, MessageCircle, CheckCircle, ArrowRight, Zap, BarChart3, Wifi, AlertCircle } from 'lucide-react';
 
-const EcommercePage = () => {
+const TelecommunicationsPage = () => {
   const features = [
     {
       icon: MessageCircle,
-      title: 'Order Confirmations',
-      description: 'Automatically send order confirmations with tracking details via WhatsApp',
-      benefits: ['Instant notifications', 'Reduced support queries', 'Better customer experience']
-    },
-    {
-      icon: ShoppingBag,
-      title: 'Cart Abandonment Recovery',
-      description: 'Win back customers with personalized WhatsApp messages for abandoned carts',
-      benefits: ['Recover 30% more sales', 'Personalized reminders', 'Automated follow-ups']
-    },
-    {
-      icon: Users,
       title: 'Customer Support',
-      description: '24/7 automated customer support for order inquiries and product questions',
-      benefits: ['Instant responses', 'Multilingual support', 'Escalation to human agents']
+      description: '24/7 automated support for billing queries, plan changes, and technical troubleshooting',
+      benefits: ['Instant responses', 'Reduced call volumes', 'Better satisfaction']
     },
     {
-      icon: TrendingUp,
-      title: 'Sales Notifications',
-      description: 'Keep customers updated about flash sales, new arrivals, and exclusive offers',
-      benefits: ['Higher engagement', 'Increased repeat purchases', 'Targeted promotions']
+      icon: Smartphone,
+      title: 'Plan Management',
+      description: 'Easy plan upgrades, recharges, and data top-ups through conversational WhatsApp interface',
+      benefits: ['Self-service portal', 'Quick transactions', 'Higher ARPU']
+    },
+    {
+      icon: AlertCircle,
+      title: 'Service Alerts',
+      description: 'Proactive notifications about network issues, maintenance, and service updates',
+      benefits: ['Proactive communication', 'Reduced complaints', 'Better transparency']
+    },
+    {
+      icon: Wifi,
+      title: 'Onboarding & Activation',
+      description: 'Streamlined new customer onboarding and SIM activation process via WhatsApp',
+      benefits: ['Faster activation', 'Better experience', 'Lower churn']
     }
   ];
 
   const useCases = [
     {
-      title: 'Order Management',
-      description: 'Complete order lifecycle automation from confirmation to delivery',
-      steps: ['Order placed → Instant WhatsApp confirmation', 'Payment confirmed → Processing notification', 'Shipped → Tracking details shared', 'Delivered → Feedback request']
-    },
-    {
       title: 'Customer Acquisition',
-      description: 'Convert website visitors into WhatsApp subscribers for better engagement',
-      steps: ['Website popup → WhatsApp opt-in', 'Welcome message → Product catalog', 'Personalized recommendations', 'Exclusive offers for subscribers']
+      description: 'Convert leads into subscribers with automated engagement',
+      steps: ['Plan inquiry instant response', 'Personalized recommendations', 'Digital KYC completion', 'SIM delivery tracking']
     },
     {
-      title: 'Post-Purchase Engagement',
-      description: 'Build long-term relationships with customers after purchase',
-      steps: ['Delivery confirmation', 'Usage tips and tutorials', 'Review and rating request', 'Cross-sell related products']
+      title: 'Billing & Payments',
+      description: 'Simplify billing and payment processes',
+      steps: ['Monthly bill notifications', 'Payment link sharing', 'Payment confirmation', 'Auto-pay enrollment']
+    },
+    {
+      title: 'Usage Monitoring',
+      description: 'Keep customers informed about their usage',
+      steps: ['Daily usage updates', 'Data limit warnings', 'Recharge suggestions', 'Plan upgrade recommendations']
+    },
+    {
+      title: 'Technical Support',
+      description: 'Automate common technical issue resolution',
+      steps: ['Issue identification', 'Automated troubleshooting', 'Configuration instructions', 'Ticket escalation if needed']
     }
+  ];
+
+  const statistics = [
+    { value: '70%', label: 'Reduction in Call Center Volume' },
+    { value: '50%', label: 'Faster Issue Resolution' },
+    { value: '35%', label: 'Increase in Self-Service' },
+    { value: '60%', label: 'Higher Customer Retention' }
   ];
 
   return (
@@ -55,15 +67,15 @@ const EcommercePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center px-4 py-2 bg-white/20 rounded-full text-sm font-medium mb-6">
-                <ShoppingBag className="h-4 w-4 mr-2" />
-                E-commerce Automation
+                <Smartphone className="h-4 w-4 mr-2" />
+                Telecommunications Automation
               </div>
               <h1 className="text-5xl font-bold mb-6">
-                Boost Your E-commerce Sales with WhatsApp Automation
+                Transform Telecom Customer Experience with WhatsApp
               </h1>
               <p className="text-xl opacity-90 mb-8">
-                Increase conversions by 45%, reduce cart abandonment by 30%, and provide instant customer support 
-                with ChatSigma's e-commerce WhatsApp automation.
+                Reduce call volumes by 70%, resolve issues 50% faster, and improve retention
+                with ChatSigma's telecommunications WhatsApp automation.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="https://app.chatsigma.com/vb/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-[#25D366] rounded-lg font-semibold hover:bg-gray-50 transition-colors">
@@ -74,8 +86,7 @@ const EcommercePage = () => {
                 </a>
               </div>
             </div>
-            
-            {/* Animated E-commerce Graphics */}
+
             <div className="relative">
               <div className="bg-white/10 rounded-3xl p-8 backdrop-blur-sm">
                 <div className="space-y-4">
@@ -84,34 +95,33 @@ const EcommercePage = () => {
                       <CheckCircle className="h-5 w-5 text-white" />
                     </div>
                     <div>
-                      <div className="font-semibold">Order #12345 Confirmed!</div>
-                      <div className="text-sm opacity-80">Your iPhone 15 Pro is being processed</div>
+                      <div className="font-semibold">Data Usage Alert</div>
+                      <div className="text-sm opacity-80">80% of your 10GB plan used</div>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3 bg-white/20 rounded-lg p-3">
-                    <div className="w-8 h-8 bg-[#006AFF] rounded-full flex items-center justify-center">
-                      <TrendingUp className="h-5 w-5 text-white" />
+                    <div className="w-8 h-8 bg-[#1877F2] rounded-full flex items-center justify-center">
+                      <Smartphone className="h-5 w-5 text-white" />
                     </div>
                     <div>
-                      <div className="font-semibold">Flash Sale Alert! 🔥</div>
-                      <div className="text-sm opacity-80">50% off on selected items - Limited time</div>
+                      <div className="font-semibold">Quick Recharge</div>
+                      <div className="text-sm opacity-80">1GB Data Booster - Just $5</div>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3 bg-white/20 rounded-lg p-3">
                     <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                      <ShoppingBag className="h-5 w-5 text-white" />
+                      <Wifi className="h-5 w-5 text-white" />
                     </div>
                     <div>
-                      <div className="font-semibold">Cart Reminder</div>
-                      <div className="text-sm opacity-80">You left something in your cart...</div>
+                      <div className="font-semibold">Network Update</div>
+                      <div className="text-sm opacity-80">5G now available in your area!</div>
                     </div>
                   </div>
                 </div>
               </div>
-              
-              {/* Floating elements */}
+
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center animate-float">
                 <BarChart3 className="h-8 w-8 text-white" />
               </div>
@@ -123,15 +133,29 @@ const EcommercePage = () => {
         </div>
       </div>
 
+      {/* Statistics Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {statistics.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl font-bold text-[#25D366] mb-2">{stat.value}</div>
+                <div className="text-gray-700">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-black mb-4">
-              Complete E-commerce Automation Suite
+              Complete Telecommunications Suite
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              From order confirmations to customer support, automate every aspect of your e-commerce business with WhatsApp.
+              From customer support to plan management, automate every aspect of your telecom operations with WhatsApp.
             </p>
           </div>
 
@@ -169,11 +193,11 @@ const EcommercePage = () => {
               Real-World Use Cases
             </h2>
             <p className="text-xl text-gray-700">
-              See how leading e-commerce brands use ChatSigma to automate their WhatsApp communications
+              See how leading telecom operators use ChatSigma to automate customer communications and reduce support costs
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {useCases.map((useCase, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg">
                 <h3 className="text-xl font-bold text-black mb-4">{useCase.title}</h3>
@@ -200,10 +224,10 @@ const EcommercePage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-[#25D366] rounded-3xl p-12 text-white">
             <h2 className="text-3xl font-bold mb-4">
-              Ready to Transform Your E-commerce Business?
+              Ready to Transform Your Telecom Operations?
             </h2>
             <p className="text-xl opacity-90 mb-8">
-              Join 500+ e-commerce brands already using ChatSigma to automate their WhatsApp communications and boost sales.
+              Join leading telecom operators already using ChatSigma to automate customer communications and reduce costs.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <a href="https://app.chatsigma.com/vb/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-white text-[#25D366] rounded-lg font-semibold hover:bg-gray-50 transition-colors flex items-center">
@@ -221,4 +245,4 @@ const EcommercePage = () => {
   );
 };
 
-export default EcommercePage;
+export default TelecommunicationsPage;

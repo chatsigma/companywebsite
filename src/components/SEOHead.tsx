@@ -9,16 +9,29 @@ interface SEOHeadProps {
   url?: string;
   type?: string;
   schemaData?: any;
+  article?: {
+    publishedTime?: string;
+    modifiedTime?: string;
+    author?: string;
+    section?: string;
+    tags?: string[];
+  };
+  breadcrumbs?: Array<{
+    name: string;
+    url: string;
+  }>;
 }
 
 const SEOHead: React.FC<SEOHeadProps> = ({
-  title = "Chat Sigma - Official WhatsApp Business API & Automation Tool",
-  description = "Automate WhatsApp conversations, manage leads, and boost sales with Chat Sigma's official WhatsApp Business API platform. 0% markup, 14-day free trial.",
-  keywords = "WhatsApp Business API, WhatsApp Automation, WhatsApp Chatbot, WhatsApp Marketing, Business Messaging, Chat Automation, WhatsApp API, Business Communication",
-  image = "https://chatsigma.com/og-image.jpg",
+  title = "ChatSigma - Official WhatsApp Business API & Automation Platform | 0% Markup",
+  description = "Automate WhatsApp conversations, manage leads, and boost sales with ChatSigma's official WhatsApp Business API. 0% markup pricing, AI chatbot, bulk messaging, and analytics. Start your 14-day free trial today.",
+  keywords = "WhatsApp Business API, WhatsApp Automation, WhatsApp Chatbot, AI Chatbot, Bulk Messaging, WhatsApp Marketing, Business Messaging, Chat Automation, WhatsApp API, Business Communication, Customer Engagement, Lead Management",
+  image = "https://chatsigma.com/CHAT_SIGMA_LOGO-removebg-preview.png",
   url = "https://chatsigma.com/",
   type = "website",
-  schemaData
+  schemaData,
+  article,
+  breadcrumbs
 }) => {
   const defaultSchemaData = {
     "@context": "https://schema.org",
@@ -80,36 +93,73 @@ const SEOHead: React.FC<SEOHeadProps> = ({
 
   const finalSchemaData = schemaData || defaultSchemaData;
 
+  // Generate breadcrumb schema if breadcrumbs provided
+  const breadcrumbSchema = breadcrumbs ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbs.map((crumb, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": crumb.name,
+      "item": crumb.url
+    }))
+  } : null;
+
   return (
     <Helmet>
       {/* Basic Meta Tags */}
       <title>{title}</title>
+      <meta name="title" content={title} />
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content="ChatSigma Technologies (OPC) Private Limited" />
+      <meta name="publisher" content="ChatSigma Technologies (OPC) Private Limited" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <meta name="googlebot" content="index, follow" />
+      <meta name="bingbot" content="index, follow" />
+      <meta name="rating" content="general" />
+      <meta name="referrer" content="no-referrer-when-downgrade" />
+      <meta name="format-detection" content="telephone=no" />
       <link rel="canonical" href={url} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
+      <meta property="og:site_name" content="ChatSigma" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:secure_url" content={image} />
+      <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:site_name" content="ChatSigma" />
+      <meta property="og:image:alt" content={title} />
       <meta property="og:locale" content="en_US" />
+      <meta property="og:locale:alternate" content="hi_IN" />
 
-      {/* Twitter */}
+      {/* Article specific Open Graph tags */}
+      {article && type === 'article' && (
+        <>
+          {article.publishedTime && <meta property="article:published_time" content={article.publishedTime} />}
+          {article.modifiedTime && <meta property="article:modified_time" content={article.modifiedTime} />}
+          {article.author && <meta property="article:author" content={article.author} />}
+          {article.section && <meta property="article:section" content={article.section} />}
+          {article.tags && article.tags.map((tag, index) => (
+            <meta key={index} property="article:tag" content={tag} />
+          ))}
+        </>
+      )}
+
+      {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={url} />
+      <meta name="twitter:site" content="@chatsigma" />
+      <meta name="twitter:creator" content="@chatsigma" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-      <meta name="twitter:site" content="@chatsigma" />
-      <meta name="twitter:creator" content="@chatsigma" />
+      <meta name="twitter:image:alt" content={title} />
+      <meta name="twitter:domain" content="chatsigma.com" />
+      <meta name="twitter:url" content={url} />
 
       {/* Additional SEO Meta Tags */}
       <meta name="theme-color" content="#25D366" />
@@ -135,9 +185,46 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <meta name="business:contact_data:phone_number" content="+91-9220304949" />
       <meta name="business:contact_data:email" content="info@chatsigma.com" />
 
-      {/* Schema.org JSON-LD */}
+      {/* Schema.org JSON-LD for Organization/Other Data */}
       <script type="application/ld+json">
         {JSON.stringify(finalSchemaData)}
+      </script>
+
+      {/* Breadcrumb Schema if provided */}
+      {breadcrumbSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      )}
+
+      {/* WebPage Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": title,
+          "description": description,
+          "url": url,
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "ChatSigma",
+            "url": "https://chatsigma.com"
+          },
+          "about": {
+            "@type": "Thing",
+            "name": "WhatsApp Business API",
+            "description": "Official WhatsApp Business API automation and messaging platform"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "ChatSigma Technologies (OPC) Private Limited",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://chatsigma.com/CHAT_SIGMA_LOGO-removebg-preview.png"
+            }
+          }
+        })}
       </script>
     </Helmet>
   );

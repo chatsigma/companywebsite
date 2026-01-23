@@ -192,7 +192,7 @@ const WhyChooseUs = () => {
                 Start Free Trial
               </a>
               <a
-                href="https://calendly.com/contactchatsigma/whatsapp-automation-with-chatsigma"
+                href="https://calendly.com/chatsigma-info/new-meeting"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto btn-mobile sm:px-6 md:px-8 sm:py-3 md:py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#25D366] transition-all transform hover:scale-105"

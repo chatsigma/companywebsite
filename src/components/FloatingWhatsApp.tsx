@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 
 export const FloatingWhatsApp: React.FC = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/1234567890', '_blank');
+    window.open('https://wa.me/919220304943?text=Hey%20Team%20Chatsigma%20I%20want%20to%20automate%20my%20business%20via%20ChatSigma', '_blank');
   };
 
   return (

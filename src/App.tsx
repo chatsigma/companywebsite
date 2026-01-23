@@ -37,6 +37,18 @@ import FinancePage from './pages/industries/FinancePage';
 import EducationPage from './pages/industries/EducationPage';
 import RealEstatePage from './pages/industries/RealEstatePage';
 import HospitalityPage from './pages/industries/HospitalityPage';
+import AviationPage from './pages/industries/AviationPage';
+import AutomotivePage from './pages/industries/AutomotivePage';
+import RetailPage from './pages/industries/RetailPage';
+import ManufacturingPage from './pages/industries/ManufacturingPage';
+import LogisticsPage from './pages/industries/LogisticsPage';
+import TravelTourismPage from './pages/industries/TravelTourismPage';
+import InsurancePage from './pages/industries/InsurancePage';
+import LegalServicesPage from './pages/industries/LegalServicesPage';
+import TelecommunicationsPage from './pages/industries/TelecommunicationsPage';
+import MediaEntertainmentPage from './pages/industries/MediaEntertainmentPage';
+import NonProfitPage from './pages/industries/NonProfitPage';
+import GovernmentPage from './pages/industries/GovernmentPage';
 
 // Other Pages
 import ContactPage from './pages/ContactPage';
@@ -338,13 +350,145 @@ function App() {
           } />
           <Route path="/industries/hospitality" element={
             <>
-              <SEOHead 
+              <SEOHead
                 title="WhatsApp Automation for Hospitality | Guest Experience | ChatSigma"
                 description="Enhance guest experience with WhatsApp automation. Booking confirmations, concierge services, feedback collection for hotels and restaurants."
                 keywords="hospitality WhatsApp automation, hotel WhatsApp, restaurant chatbot, guest communication"
                 url="https://chatsigma.com/industries/hospitality"
               />
               <HospitalityPage />
+            </>
+          } />
+          <Route path="/industries/aviation" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Aviation | Passenger Communication | ChatSigma"
+                description="Transform passenger experience with WhatsApp automation. Flight updates, booking confirmations, customer support for airlines."
+                keywords="aviation WhatsApp automation, airline WhatsApp, flight notifications, passenger communication"
+                url="https://chatsigma.com/industries/aviation"
+              />
+              <AviationPage />
+            </>
+          } />
+          <Route path="/industries/automotive" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Automotive | Sales & Service | ChatSigma"
+                description="Drive more sales with WhatsApp automation for automotive. Service reminders, test drive booking, repair updates for dealerships."
+                keywords="automotive WhatsApp automation, car dealership WhatsApp, vehicle service reminders, automotive chatbot"
+                url="https://chatsigma.com/industries/automotive"
+              />
+              <AutomotivePage />
+            </>
+          } />
+          <Route path="/industries/retail" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Retail | Customer Engagement | ChatSigma"
+                description="Transform retail business with WhatsApp automation. Customer engagement, order updates, loyalty programs for retail stores."
+                keywords="retail WhatsApp automation, retail customer engagement, store WhatsApp, retail chatbot"
+                url="https://chatsigma.com/industries/retail"
+              />
+              <RetailPage />
+            </>
+          } />
+          <Route path="/industries/manufacturing" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Manufacturing | Production Updates | ChatSigma"
+                description="Streamline manufacturing operations with WhatsApp automation. Production updates, order tracking, supply chain coordination."
+                keywords="manufacturing WhatsApp automation, production updates, B2B WhatsApp, manufacturing chatbot"
+                url="https://chatsigma.com/industries/manufacturing"
+              />
+              <ManufacturingPage />
+            </>
+          } />
+          <Route path="/industries/logistics" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Logistics | Shipment Tracking | ChatSigma"
+                description="Optimize logistics operations with WhatsApp automation. Real-time tracking, delivery coordination, proof of delivery."
+                keywords="logistics WhatsApp automation, shipment tracking, delivery updates, logistics chatbot"
+                url="https://chatsigma.com/industries/logistics"
+              />
+              <LogisticsPage />
+            </>
+          } />
+          <Route path="/industries/travel-tourism" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Travel & Tourism | Booking Management | ChatSigma"
+                description="Elevate travel experience with WhatsApp automation. Booking confirmations, trip planning, travel updates for travel agencies."
+                keywords="travel WhatsApp automation, tourism WhatsApp, booking management, travel chatbot"
+                url="https://chatsigma.com/industries/travel-tourism"
+              />
+              <TravelTourismPage />
+            </>
+          } />
+          <Route path="/industries/insurance" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Insurance | Policy Management | ChatSigma"
+                description="Modernize insurance with WhatsApp automation. Policy management, claims processing, instant quotes for insurance companies."
+                keywords="insurance WhatsApp automation, policy management, claims processing, insurance chatbot"
+                url="https://chatsigma.com/industries/insurance"
+              />
+              <InsurancePage />
+            </>
+          } />
+          <Route path="/industries/legal-services" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Legal Services | Client Communication | ChatSigma"
+                description="Modernize legal practice with WhatsApp automation. Client communication, appointment scheduling, document collection for law firms."
+                keywords="legal WhatsApp automation, law firm WhatsApp, legal chatbot, client communication"
+                url="https://chatsigma.com/industries/legal-services"
+              />
+              <LegalServicesPage />
+            </>
+          } />
+          <Route path="/industries/telecommunications" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Telecommunications | Customer Support | ChatSigma"
+                description="Transform telecom customer experience with WhatsApp. 24/7 support, plan management, usage alerts for telecom operators."
+                keywords="telecom WhatsApp automation, telecommunications chatbot, mobile operator WhatsApp, telecom support"
+                url="https://chatsigma.com/industries/telecommunications"
+              />
+              <TelecommunicationsPage />
+            </>
+          } />
+          <Route path="/industries/media-entertainment" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Media & Entertainment | Audience Engagement | ChatSigma"
+                description="Amplify audience engagement with WhatsApp automation. Content distribution, fan engagement, event promotion for media companies."
+                keywords="media WhatsApp automation, entertainment chatbot, audience engagement, content distribution"
+                url="https://chatsigma.com/industries/media-entertainment"
+              />
+              <MediaEntertainmentPage />
+            </>
+          } />
+          <Route path="/industries/non-profit" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Non-Profit | Donor Engagement | ChatSigma"
+                description="Amplify your impact with WhatsApp automation. Donor engagement, fundraising campaigns, volunteer coordination for non-profits."
+                keywords="non-profit WhatsApp automation, donor engagement, fundraising WhatsApp, volunteer coordination"
+                url="https://chatsigma.com/industries/non-profit"
+              />
+              <NonProfitPage />
+            </>
+          } />
+          <Route path="/industries/government" element={
+            <>
+              <SEOHead
+                title="WhatsApp Automation for Government | Citizen Services | ChatSigma"
+                description="Digitize government services with WhatsApp automation. Citizen services, public alerts, document services for government departments."
+                keywords="government WhatsApp automation, citizen services, public alerts, government chatbot"
+                url="https://chatsigma.com/industries/government"
+              />
+              <GovernmentPage />
             </>
           } />
           

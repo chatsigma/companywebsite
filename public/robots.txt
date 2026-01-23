@@ -12,7 +12,19 @@ Disallow: /admin/
 Disallow: /api/
 Disallow: /*.json$
 
-# Allow all tools and resources
+# Explicitly allow important sections
 Allow: /tools/
 Allow: /resources/
 Allow: /industries/
+Allow: /features/
+Allow: /about
+Allow: /pricing
+Allow: /contact
+Allow: /integrations
+Allow: /api-documentation
+Allow: /whatsapp-bluetick-verification
+
+# Allow search engines to crawl all public content
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /cookie-policy

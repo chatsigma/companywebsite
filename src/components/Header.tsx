@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, MessageCircle, Phone, Star, Users, Zap, Shield, BarChart3, Bot, QrCode, Link as LinkIcon, Code, UserPlus, FileText, CheckCircle, Eye, MessageSquare, Award } from 'lucide-react';
+import { Menu, X, ChevronDown, MessageCircle, Phone, Star, Users, Zap, Shield, BarChart3, Bot, QrCode, Link as LinkIcon, Code, UserPlus, FileText, CheckCircle, Eye, MessageSquare, Award, Plane, Car, Store, Factory, Truck, Compass, Scale, Smartphone, Film, Heart, Building2 } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,6 +49,18 @@ const Header = () => {
     { title: 'Education', icon: Users, desc: 'Student engagement', path: '/industries/education' },
     { title: 'Real Estate', icon: Zap, desc: 'Lead management', path: '/industries/real-estate' },
     { title: 'Hospitality', icon: MessageCircle, desc: 'Guest services', path: '/industries/hospitality' },
+    { title: 'Aviation', icon: Plane, desc: 'Passenger experience', path: '/industries/aviation' },
+    { title: 'Automotive', icon: Car, desc: 'Vehicle sales & service', path: '/industries/automotive' },
+    { title: 'Retail', icon: Store, desc: 'Customer engagement', path: '/industries/retail' },
+    { title: 'Manufacturing', icon: Factory, desc: 'Production automation', path: '/industries/manufacturing' },
+    { title: 'Logistics', icon: Truck, desc: 'Shipment tracking', path: '/industries/logistics' },
+    { title: 'Travel & Tourism', icon: Compass, desc: 'Booking management', path: '/industries/travel-tourism' },
+    { title: 'Insurance', icon: Shield, desc: 'Policy management', path: '/industries/insurance' },
+    { title: 'Legal Services', icon: Scale, desc: 'Client communication', path: '/industries/legal-services' },
+    { title: 'Telecommunications', icon: Smartphone, desc: 'Customer support', path: '/industries/telecommunications' },
+    { title: 'Media & Entertainment', icon: Film, desc: 'Audience engagement', path: '/industries/media-entertainment' },
+    { title: 'Non-Profit', icon: Heart, desc: 'Donor engagement', path: '/industries/non-profit' },
+    { title: 'Government', icon: Building2, desc: 'Citizen services', path: '/industries/government' },
   ];
 
   const scrollToFeatures = () => {
@@ -68,11 +80,31 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <img 
-                src="/CHAT_SIGMA_LOGO-removebg-preview.png" 
-                alt="ChatSigma" 
-                className="h-8 w-8 sm:h-10 sm:w-10 mr-2 sm:mr-3"
+              <img
+                src="/chatsigma-logo.svg"
+                alt="ChatSigma Logo"
+                className="h-8 w-8 sm:h-10 sm:w-10 mr-2 sm:mr-3 object-contain drop-shadow-sm"
+                onError={(e) => {
+                  // Fallback: Try PNG, then show icon
+                  const target = e.currentTarget;
+                  if (target.src.includes('.svg')) {
+                    target.src = '/CHAT_SIGMA_LOGO-removebg-preview.png';
+                  } else {
+                    target.style.display = 'none';
+                    const fallbackIcon = target.nextElementSibling as HTMLElement;
+                    if (fallbackIcon && fallbackIcon.classList.contains('logo-fallback')) {
+                      fallbackIcon.style.display = 'flex';
+                    }
+                  }
+                }}
+                loading="eager"
               />
+              <div
+                className="logo-fallback hidden h-8 w-8 sm:h-10 sm:w-10 mr-2 sm:mr-3 items-center justify-center bg-gradient-to-br from-[#25D366] to-[#1da851] rounded-lg text-white font-bold text-sm sm:text-base shadow-lg"
+                style={{ display: 'none' }}
+              >
+                CS
+              </div>
               <span className="text-xl sm:text-2xl font-bold text-black">
                 ChatSigma
               </span>
@@ -179,7 +211,7 @@ const Header = () => {
               
               {activeDropdown === 'industries' && (
                 <div
-                  className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 p-4 z-[9999]"
+                  className="absolute top-full left-0 mt-2 w-96 bg-white rounded-lg shadow-xl border border-gray-200 p-4 max-h-96 overflow-y-auto z-[9999]"
                   onMouseEnter={() => setActiveDropdown('industries')}
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
