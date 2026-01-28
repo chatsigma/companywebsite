@@ -720,6 +720,293 @@ const PricingPage = () => {
         </div>
       </section>
 
+      {/* Compare Plans and Features Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Compare plans and features
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Choose the perfect plan for your business needs with our detailed feature comparison
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-gray-200">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-gradient-to-r from-[#25D366]/10 to-[#1877F2]/10 border-b-2 border-gray-200">
+                    <th className="text-left p-6 text-gray-900 font-bold text-lg">Features</th>
+                    <th className="text-center p-6 text-gray-900 font-bold text-lg">Essestional</th>
+                    <th className="text-center p-6 text-gray-900 font-bold text-lg relative">
+                      <div className="inline-flex flex-col items-center">
+                        <div className="absolute -top-3 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] text-gray-900 px-4 py-1 rounded-full text-xs font-black shadow-lg border-2 border-white">
+                          Most Popular
+                        </div>
+                        <span className="mt-4">Automation Pro</span>
+                      </div>
+                    </th>
+                    <th className="text-center p-6 text-gray-900 font-bold text-lg">Automation Max</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    {
+                      icon: Users,
+                      feature: 'Team Inbox',
+                      essestional: '1 owner + 5 agents',
+                      pro: '10 agents',
+                      max: 'Unlimited agents'
+                    },
+                    {
+                      icon: MessageCircle,
+                      feature: 'No. of messages',
+                      essestional: 'Unlimited',
+                      pro: 'Unlimited',
+                      max: 'Unlimited'
+                    },
+                    {
+                      icon: MessageCircle,
+                      feature: 'No. of conversations',
+                      essestional: 'Unlimited',
+                      pro: 'Unlimited',
+                      max: 'Unlimited'
+                    },
+                    {
+                      icon: Users,
+                      feature: 'No. of customers',
+                      essestional: '25,000',
+                      pro: '2,50,000',
+                      max: 'Unlimited'
+                    },
+                    {
+                      icon: Users,
+                      feature: 'No. of agents',
+                      essestional: '5 agents',
+                      pro: '10 agents',
+                      max: 'Custom'
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Conversation tags',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Conversation and message search',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Filtering based on tags and agents',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: Bot,
+                      feature: 'Basic FAQ Bot',
+                      essestional: true,
+                      pro: 'Advanced',
+                      max: 'Unlimited'
+                    },
+                    {
+                      icon: Zap,
+                      feature: 'Workflow Automation',
+                      essestional: '10',
+                      pro: '25',
+                      max: '50'
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Bulk broadcast',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Bulk import & export',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: Target,
+                      feature: 'Define Customer Segments',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Share products & Catalogues',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: BarChart3,
+                      feature: 'Detailed Broadcast Analytics',
+                      essestional: true,
+                      pro: 'Advanced',
+                      max: 'Advanced'
+                    },
+                    {
+                      icon: FileCheck,
+                      feature: 'Excel import & Export',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Google sheets integration',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Access on mobile and web',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Facebook Lead Integration',
+                      essestional: true,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: Bot,
+                      feature: 'AI Assistant (24/7)',
+                      essestional: false,
+                      pro: '1',
+                      max: 'Unlimited'
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Automated Ordering Bot',
+                      essestional: false,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: '3rd Party integrations',
+                      essestional: false,
+                      pro: '5+ Custom',
+                      max: 'Unlimited'
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Developer API',
+                      essestional: false,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Shopify & Woocommerce Integration',
+                      essestional: false,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: CheckCircle2,
+                      feature: 'Task & Project Assignment',
+                      essestional: false,
+                      pro: true,
+                      max: true
+                    },
+                    {
+                      icon: Headphones,
+                      feature: 'Support',
+                      essestional: 'Email & Chat',
+                      pro: '24/7 Priority',
+                      max: 'Dedicated Manager'
+                    }
+                  ].map((row, index) => {
+                    const Icon = row.icon;
+                    return (
+                      <tr
+                        key={index}
+                        className={`border-b border-gray-100 hover:bg-gray-50/50 transition-colors ${
+                          index % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'
+                        }`}
+                      >
+                        <td className="p-4 sm:p-6">
+                          <div className="flex items-center gap-3">
+                            <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#25D366]/10 flex items-center justify-center">
+                              <Icon className="w-4 h-4 text-[#25D366]" />
+                            </div>
+                            <span className="text-gray-900 font-medium text-sm sm:text-base">{row.feature}</span>
+                          </div>
+                        </td>
+                        <td className="p-4 sm:p-6 text-center">
+                          {typeof row.essestional === 'boolean' ? (
+                            row.essestional ? (
+                              <Check className="w-5 h-5 text-[#25D366] mx-auto" />
+                            ) : (
+                              <span className="text-gray-400 text-sm">-</span>
+                            )
+                          ) : (
+                            <span className="text-gray-700 font-medium text-sm sm:text-base">{row.essestional}</span>
+                          )}
+                        </td>
+                        <td className="p-4 sm:p-6 text-center bg-[#25D366]/5">
+                          {typeof row.pro === 'boolean' ? (
+                            row.pro ? (
+                              <Check className="w-5 h-5 text-[#25D366] mx-auto" />
+                            ) : (
+                              <span className="text-gray-400 text-sm">-</span>
+                            )
+                          ) : (
+                            <span className="text-[#25D366] font-bold text-sm sm:text-base">{row.pro}</span>
+                          )}
+                        </td>
+                        <td className="p-4 sm:p-6 text-center">
+                          {typeof row.max === 'boolean' ? (
+                            row.max ? (
+                              <Check className="w-5 h-5 text-[#25D366] mx-auto" />
+                            ) : (
+                              <span className="text-gray-400 text-sm">-</span>
+                            )
+                          ) : (
+                            <span className="text-gray-700 font-medium text-sm sm:text-base">{row.max}</span>
+                          )}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="bg-gradient-to-r from-[#25D366]/5 to-[#1877F2]/5 p-8 text-center border-t-2 border-gray-200">
+              <p className="text-gray-600 mb-4 font-medium">Ready to get started?</p>
+              <a
+                href="https://app.chatsigma.com/vb/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1ea952] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
+              >
+                Choose Your Plan
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section
         id="benefits-section"
