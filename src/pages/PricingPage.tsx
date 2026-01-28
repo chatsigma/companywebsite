@@ -17,7 +17,7 @@ const PricingPage = () => {
   
   const plansINR = [
     {
-      name: 'Essestional',
+      name: 'Essential',
       icon: Rocket,
       price: '₹7,999',
       originalPrice: '₹9,999',
@@ -60,7 +60,7 @@ const PricingPage = () => {
       tagline: 'Most Popular',
       popular: true,
       features: [
-        'Everything available in Essestional +',
+        'Everything available in Essential +',
         'Team Inbox (10 Agents FREE)',
         'Automated Ordering Bot',
         '5+ 3rd Party integrations (Custom)',
@@ -112,7 +112,7 @@ const PricingPage = () => {
   
   const plansUSD = [
     {
-      name: 'Essestional',
+      name: 'Essential',
       icon: Rocket,
       price: '$96',
       originalPrice: '$120',
@@ -155,7 +155,7 @@ const PricingPage = () => {
       tagline: 'Most Popular',
       popular: true,
       features: [
-        'Everything available in Essestional +',
+        'Everything available in Essential +',
         'Team Inbox (10 Agents FREE)',
         'Automated Ordering Bot',
         '5+ 3rd Party integrations (Custom)',
@@ -746,7 +746,7 @@ const PricingPage = () => {
                 <thead>
                   <tr className="bg-gradient-to-r from-[#25D366]/10 to-[#1877F2]/10 border-b-2 border-gray-200">
                     <th className="text-left p-6 text-gray-900 font-bold text-lg">Features</th>
-                    <th className="text-center p-6 text-gray-900 font-bold text-lg">Essestional</th>
+                    <th className="text-center p-6 text-gray-900 font-bold text-lg">Essential</th>
                     <th className="text-center p-6 text-gray-900 font-bold text-lg">
                       Automation Pro
                     </th>

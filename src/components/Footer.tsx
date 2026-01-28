@@ -49,14 +49,9 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
               <img
-                src="/cs_logo_web-removebg-preview copy.png"
+                src="/cs_logo_web-removebg-preview.png"
                 alt="ChatSigma Logo"
                 className="h-16 w-auto object-contain"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.onerror = null;
-                  target.src = '/cs_logo_web-removebg-preview.png';
-                }}
               />
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
