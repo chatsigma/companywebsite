@@ -47,7 +47,7 @@ const PricingPage = () => {
         'WhatsApp Inbuilt forms (survey, leads, feedback)'
       ],
       cta: 'Get Started',
-      ctaLink: 'https://app.chatsigma.com/vb/',
+      ctaLink: 'https://rzp.io/rzp/rHN99Sk',
       gradient: 'from-[#25D366]/5 to-[#25D366]/10'
     },
     {
@@ -78,7 +78,7 @@ const PricingPage = () => {
         '24/7 priority Chat support'
       ],
       cta: 'Get Started',
-      ctaLink: 'https://app.chatsigma.com/vb/',
+      ctaLink: 'https://rzp.io/rzp/v5bOGqJ',
       gradient: 'from-[#25D366]/10 to-[#25D366]/20'
     },
     {
@@ -105,7 +105,7 @@ const PricingPage = () => {
         '24/7 Priority Call & Chat Support'
       ],
       cta: 'Contact Sales',
-      ctaLink: 'https://app.chatsigma.com/vb/',
+      ctaLink: 'https://pages.razorpay.com/pl_S9FkkzjZ9w89Jk/view',
       gradient: 'from-[#1877F2]/5 to-[#1877F2]/10'
     }
   ];
@@ -142,7 +142,7 @@ const PricingPage = () => {
         'WhatsApp Inbuilt forms (survey, leads, feedback)'
       ],
       cta: 'Get Started',
-      ctaLink: 'https://app.chatsigma.com/vb/',
+      ctaLink: 'https://rzp.io/rzp/rHN99Sk',
       gradient: 'from-[#25D366]/5 to-[#25D366]/10'
     },
     {
@@ -173,7 +173,7 @@ const PricingPage = () => {
         '24/7 priority Chat support'
       ],
       cta: 'Get Started',
-      ctaLink: 'https://app.chatsigma.com/vb/',
+      ctaLink: 'https://rzp.io/rzp/v5bOGqJ',
       gradient: 'from-[#25D366]/10 to-[#25D366]/20'
     },
     {
@@ -200,7 +200,7 @@ const PricingPage = () => {
         '24/7 Priority Call & Chat Support'
       ],
       cta: 'Contact Sales',
-      ctaLink: 'https://app.chatsigma.com/vb/',
+      ctaLink: 'https://pages.razorpay.com/pl_S9FkkzjZ9w89Jk/view',
       gradient: 'from-[#1877F2]/5 to-[#1877F2]/10'
     }
   ];
