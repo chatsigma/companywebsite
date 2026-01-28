@@ -37,9 +37,6 @@
     font-size: 1.5rem !important;
   }
   
-  #pricing-section .min-h-[320px] {
-    min-height: auto !important;
-  }
   
   #cta-section .flex-col {
     gap: 0.75rem !important;

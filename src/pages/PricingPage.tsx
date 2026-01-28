@@ -17,37 +17,16 @@ const PricingPage = () => {
   
   const plansINR = [
     {
-      name: 'Free Forever',
-      icon: Sparkles,
-      price: '₹0',
-      period: '/month',
-      description: 'Perfect for getting started',
-      tagline: 'Test the Waters',
+      name: 'Essestional',
+      icon: Rocket,
+      price: '₹7,999',
+      originalPrice: '₹9,999',
+      period: '/quarterly',
+      description: 'Perfect for growing businesses',
+      tagline: 'Best Value',
       popular: false,
       features: [
         'WhatsApp Business API access',
-        '100 messages/month',
-        'Basic chatbot builder',
-        'Email support',
-        '1 team member',
-        'Basic analytics dashboard',
-        'Standard message templates',
-        'Mobile app access'
-      ],
-      cta: 'Start Free',
-      ctaLink: 'https://app.chatsigma.com/vb/',
-      gradient: 'from-gray-50 to-gray-100'
-    },
-    {
-      name: 'Launch',
-      icon: Rocket,
-      price: '₹999',
-      period: '/month',
-      description: 'For growing businesses',
-      tagline: 'Scale Your Growth',
-      popular: false,
-      features: [
-        'Everything in Free, plus:',
         'Unlimited messages',
         'Advanced chatbot builder',
         'Priority email & chat support',
@@ -62,15 +41,16 @@ const PricingPage = () => {
       gradient: 'from-[#25D366]/5 to-[#25D366]/10'
     },
     {
-      name: 'Elevate',
+      name: 'Automation Pro',
       icon: Trophy,
-      price: '₹1,999',
-      period: '/month',
+      price: '₹16,999',
+      originalPrice: '₹19,999',
+      period: '/half-yearly',
       description: 'For scaling businesses',
-      tagline: 'Most Popular Choice',
+      tagline: 'Most Popular',
       popular: true,
       features: [
-        'Everything in Launch, plus:',
+        'Everything in Essestional, plus:',
         'Unlimited messages',
         'Advanced AI with custom training',
         '24/7 priority support',
@@ -86,15 +66,16 @@ const PricingPage = () => {
       gradient: 'from-[#25D366]/10 to-[#25D366]/20'
     },
     {
-      name: 'Dominance',
+      name: 'Automation Max',
       icon: Building2,
-      price: '₹2,999',
-      period: '/month',
+      price: '₹34,999',
+      originalPrice: '₹49,999',
+      period: '/yearly',
       description: 'For enterprise businesses',
       tagline: 'Ultimate Power',
       popular: false,
       features: [
-        'Everything in Elevate, plus:',
+        'Everything in Automation Pro, plus:',
         'Unlimited everything',
         'Custom AI solutions & training',
         '24/7 priority support + hotline',
@@ -114,37 +95,16 @@ const PricingPage = () => {
   
   const plansUSD = [
     {
-      name: 'Free Forever',
-      icon: Sparkles,
-      price: '$0',
-      period: '/month',
-      description: 'Perfect for getting started',
-      tagline: 'Test the Waters',
+      name: 'Essestional',
+      icon: Rocket,
+      price: '$96',
+      originalPrice: '$120',
+      period: '/quarterly',
+      description: 'Perfect for growing businesses',
+      tagline: 'Best Value',
       popular: false,
       features: [
         'WhatsApp Business API access',
-        '100 messages/month',
-        'Basic chatbot builder',
-        'Email support',
-        '1 team member',
-        'Basic analytics dashboard',
-        'Standard message templates',
-        'Mobile app access'
-      ],
-      cta: 'Start Free',
-      ctaLink: 'https://app.chatsigma.com/vb/',
-      gradient: 'from-gray-50 to-gray-100'
-    },
-    {
-      name: 'Launch',
-      icon: Rocket,
-      price: '$12',
-      period: '/month',
-      description: 'For growing businesses',
-      tagline: 'Scale Your Growth',
-      popular: false,
-      features: [
-        'Everything in Free, plus:',
         'Unlimited messages',
         'Advanced chatbot builder',
         'Priority email & chat support',
@@ -159,15 +119,16 @@ const PricingPage = () => {
       gradient: 'from-[#25D366]/5 to-[#25D366]/10'
     },
     {
-      name: 'Elevate',
+      name: 'Automation Pro',
       icon: Trophy,
-      price: '$24',
-      period: '/month',
+      price: '$204',
+      originalPrice: '$240',
+      period: '/half-yearly',
       description: 'For scaling businesses',
-      tagline: 'Most Popular Choice',
+      tagline: 'Most Popular',
       popular: true,
       features: [
-        'Everything in Launch, plus:',
+        'Everything in Essestional, plus:',
         'Unlimited messages',
         'Advanced AI with custom training',
         '24/7 priority support',
@@ -183,15 +144,16 @@ const PricingPage = () => {
       gradient: 'from-[#25D366]/10 to-[#25D366]/20'
     },
     {
-      name: 'Dominance',
+      name: 'Automation Max',
       icon: Building2,
-      price: '$36',
-      period: '/month',
+      price: '$420',
+      originalPrice: '$600',
+      period: '/yearly',
       description: 'For enterprise businesses',
       tagline: 'Ultimate Power',
       popular: false,
       features: [
-        'Everything in Elevate, plus:',
+        'Everything in Automation Pro, plus:',
         'Unlimited everything',
         'Custom AI solutions & training',
         '24/7 priority support + hotline',
@@ -426,7 +388,7 @@ const PricingPage = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
             {plans.map((plan, index) => {
               const Icon = plan.icon;
               return (
@@ -448,9 +410,9 @@ const PricingPage = () => {
 
                   {/* Popular Badge */}
                   {plan.popular && (
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-30">
-                      <div className="bg-gradient-to-r from-[#25D366] to-[#1ea952] text-white px-6 py-2 rounded-full text-sm font-bold flex items-center shadow-2xl animate-bounce-slow">
-                        <Star className="h-4 w-4 mr-2 text-yellow-300 fill-current animate-pulse" />
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-30">
+                      <div className="bg-gradient-to-r from-[#25D366] to-[#1ea952] text-white px-4 py-1.5 rounded-full text-xs font-bold flex items-center shadow-2xl animate-bounce-slow whitespace-nowrap">
+                        <Star className="h-3.5 w-3.5 mr-1.5 text-yellow-300 fill-current animate-pulse" />
                         {plan.tagline}
                       </div>
                     </div>
@@ -473,11 +435,18 @@ const PricingPage = () => {
 
                     {/* Price */}
                     <div className="mb-6">
-                      <div className="flex items-baseline mb-2">
-                        <span className={`text-5xl font-bold ${plan.popular ? 'text-[#25D366]' : 'text-gray-900'}`}>
-                          {plan.price}
-                        </span>
-                        <span className="text-gray-600 ml-2 text-lg">{plan.period}</span>
+                      <div className="flex flex-col mb-2">
+                        {plan.originalPrice && (
+                          <span className="text-2xl font-semibold text-gray-400 line-through mb-1">
+                            {plan.originalPrice}
+                          </span>
+                        )}
+                        <div className="flex items-baseline">
+                          <span className={`text-5xl font-bold ${plan.popular ? 'text-[#25D366]' : 'text-gray-900'}`}>
+                            {plan.price}
+                          </span>
+                          <span className="text-gray-600 ml-2 text-lg">{plan.period}</span>
+                        </div>
                       </div>
                       <p className="text-gray-600">{plan.description}</p>
                     </div>
