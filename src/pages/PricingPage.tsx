@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Check, Star, ArrowRight, Zap, Rocket, Trophy, Users, Bot, MessageCircle, Clock, Shield, Award, Headphones, ChevronDown, ChevronUp, Sparkles, TrendingUp, Target, BarChart3, HeartHandshake, Building2, CheckCircle2, Calendar, UserCheck, FileCheck, Settings } from 'lucide-react';
+import { Check, Star, ArrowRight, Zap, Rocket, Trophy, Users, Bot, MessageCircle, Clock, Shield, Award, Headphones, ChevronDown, ChevronUp, Sparkles, TrendingUp, Target, BarChart3, HeartHandshake, Building2, CheckCircle2, Calendar, UserCheck, FileCheck, Settings, X } from 'lucide-react';
 
 const PricingPage = () => {
   const [showUSD, setShowUSD] = useState(false);
@@ -956,7 +956,7 @@ const PricingPage = () => {
                             row.essestional ? (
                               <Check className="w-5 h-5 text-[#25D366] mx-auto" />
                             ) : (
-                              <span className="text-gray-400 text-sm">-</span>
+                              <X className="w-5 h-5 text-red-500 mx-auto" />
                             )
                           ) : (
                             <span className="text-gray-700 font-medium text-sm sm:text-base">{row.essestional}</span>
@@ -967,7 +967,7 @@ const PricingPage = () => {
                             row.pro ? (
                               <Check className="w-5 h-5 text-[#25D366] mx-auto" />
                             ) : (
-                              <span className="text-gray-400 text-sm">-</span>
+                              <X className="w-5 h-5 text-red-500 mx-auto" />
                             )
                           ) : (
                             <span className="text-[#25D366] font-bold text-sm sm:text-base">{row.pro}</span>
@@ -978,7 +978,7 @@ const PricingPage = () => {
                             row.max ? (
                               <Check className="w-5 h-5 text-[#25D366] mx-auto" />
                             ) : (
-                              <span className="text-gray-400 text-sm">-</span>
+                              <X className="w-5 h-5 text-red-500 mx-auto" />
                             )
                           ) : (
                             <span className="text-gray-700 font-medium text-sm sm:text-base">{row.max}</span>
