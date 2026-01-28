@@ -49,11 +49,15 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
               <img
-                src="/2.png"
-                alt="ChatSigma Icon"
-                className="h-10 w-10"
+                src="/cs_logo_web-removebg-preview copy.png"
+                alt="ChatSigma Logo"
+                className="h-16 w-auto object-contain"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.onerror = null;
+                  target.src = '/cs_logo_web-removebg-preview.png';
+                }}
               />
-              <span className="ml-3 text-xl sm:text-2xl font-bold">ChatSigma</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
               The most powerful WhatsApp Business API platform for automating customer conversations and growing your business.
