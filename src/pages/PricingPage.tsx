@@ -424,7 +424,7 @@ const PricingPage = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto pt-6">
             {plans.map((plan, index) => {
               const Icon = plan.icon;
               return (
@@ -432,7 +432,7 @@ const PricingPage = () => {
                   key={index}
                   onMouseEnter={() => setHoveredPlan(index)}
                   onMouseLeave={() => setHoveredPlan(null)}
-                  className={`relative bg-white rounded-3xl shadow-2xl transition-all duration-500 transform border-2 overflow-hidden ${
+                  className={`relative bg-white rounded-3xl shadow-2xl transition-all duration-500 transform border-2 ${
                     plan.popular
                       ? 'lg:scale-105 border-[#25D366] z-20'
                       : 'border-gray-200 hover:border-[#25D366]/50 hover:scale-105 z-10'
@@ -442,13 +442,13 @@ const PricingPage = () => {
                   }}
                 >
                   {/* Gradient Background */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${plan.gradient} transition-opacity duration-500 ${hoveredPlan === index ? 'opacity-100' : 'opacity-50'}`}></div>
+                  <div className={`absolute inset-0 bg-gradient-to-br ${plan.gradient} transition-opacity duration-500 rounded-3xl ${hoveredPlan === index ? 'opacity-100' : 'opacity-50'}`}></div>
 
                   {/* Popular Badge */}
                   {plan.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-30">
-                      <div className="bg-gradient-to-r from-[#25D366] to-[#1ea952] text-white px-4 py-1.5 rounded-full text-xs font-bold flex items-center shadow-2xl whitespace-nowrap">
-                        <Star className="h-3.5 w-3.5 mr-1.5 text-yellow-300 fill-current" />
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-50">
+                      <div className="bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] text-gray-900 px-5 py-2 rounded-full text-sm font-black flex items-center shadow-2xl whitespace-nowrap border-2 border-white">
+                        <Star className="h-4 w-4 mr-1.5 text-gray-900 fill-current" />
                         {plan.tagline}
                       </div>
                     </div>
@@ -527,7 +527,7 @@ const PricingPage = () => {
                   </div>
 
                   {/* Bottom Accent */}
-                  <div className={`absolute bottom-0 left-0 right-0 h-1 transition-all duration-500 bg-[#25D366] ${hoveredPlan === index ? 'h-2' : ''}`}></div>
+                  <div className={`absolute bottom-0 left-0 right-0 h-1 transition-all duration-500 bg-[#25D366] rounded-b-3xl ${hoveredPlan === index ? 'h-2' : ''}`}></div>
                 </div>
               );
             })}
