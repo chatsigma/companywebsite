@@ -355,35 +355,37 @@ const PricingPage = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-black leading-tight">
-            Simple, Transparent
-            <br />
             <span className="bg-gradient-to-r from-[#25D366] to-[#1877F2] bg-clip-text text-transparent animate-gradient">
-              Pricing Plans
+              Simple, Transparent Pricing
             </span>
+            <br />
+            for WhatsApp Automation That Scales
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Choose the perfect plan for your business. Scale as you grow.
-            <br />
-            <span className="font-semibold text-gray-900">No hidden fees. No surprises. Cancel anytime.</span>
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-6 leading-relaxed">
+            Access the official WhatsApp Business API with powerful automation, AI-driven workflows, and enterprise-grade integrations — all in one platform.
           </p>
 
-          {/* Trust Indicators */}
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <Check className="w-5 h-5 text-[#25D366]" />
-              <span>7-day free trial</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-5 h-5 text-[#25D366]" />
-              <span>No credit card required</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Check className="w-5 h-5 text-[#25D366]" />
-              <span>Cancel anytime</span>
-            </div>
+          {/* Trust Line */}
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-sm text-gray-600 mb-8">
+            <span className="font-medium">Official WhatsApp Business API</span>
+            <span className="text-gray-400">•</span>
+            <span className="font-medium">Meta-compliant</span>
+            <span className="text-gray-400">•</span>
+            <span className="font-medium">Built for growing businesses</span>
           </div>
+
+          {/* CTA Button */}
+          <button
+            onClick={() => {
+              document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:bg-[#1ea952] shadow-lg hover:shadow-xl"
+          >
+            View Plans
+            <ArrowRight className="w-5 h-5" />
+          </button>
         </div>
       </section>
 
@@ -485,26 +487,8 @@ const PricingPage = () => {
                       <p className="text-gray-600">{plan.description}</p>
                     </div>
 
-                    {/* CTA Button */}
-                    <a
-                      href={plan.ctaLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center relative overflow-hidden group mb-8 shadow-lg ${
-                        plan.popular
-                          ? 'bg-[#25D366] text-white hover:bg-[#1ea952]'
-                          : 'bg-gray-900 text-white hover:bg-gray-800'
-                      }`}
-                    >
-                      <span className="absolute -inset-x-10 top-0 bottom-0 h-full w-20 bg-white/20 transform -skew-x-12 group-hover:animate-shine"></span>
-                      <span className="relative z-10 flex items-center">
-                        {plan.cta}
-                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                      </span>
-                    </a>
-
                     {/* Features List */}
-                    <div className="space-y-4">
+                    <div className="space-y-4 mb-8">
                       {plan.features.map((feature, featureIndex) => (
                         <div
                           key={featureIndex}
@@ -520,7 +504,7 @@ const PricingPage = () => {
                           </div>
                           <span
                             className={`text-sm leading-relaxed ${
-                              feature.includes('Everything in') ? 'font-bold text-gray-900' : 'text-gray-700'
+                              feature.includes('Everything in') || feature.includes('Everything available') ? 'font-bold text-gray-900' : 'text-gray-700'
                             }`}
                           >
                             {feature}
@@ -528,6 +512,24 @@ const PricingPage = () => {
                         </div>
                       ))}
                     </div>
+
+                    {/* CTA Button */}
+                    <a
+                      href={plan.ctaLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center relative overflow-hidden group shadow-lg ${
+                        plan.popular
+                          ? 'bg-[#25D366] text-white hover:bg-[#1ea952]'
+                          : 'bg-gray-900 text-white hover:bg-gray-800'
+                      }`}
+                    >
+                      <span className="absolute -inset-x-10 top-0 bottom-0 h-full w-20 bg-white/20 transform -skew-x-12 group-hover:animate-shine"></span>
+                      <span className="relative z-10 flex items-center">
+                        {plan.cta}
+                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                      </span>
+                    </a>
                   </div>
 
                   {/* Bottom Accent */}
