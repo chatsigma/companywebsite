@@ -254,24 +254,32 @@ const PricingPage = () => {
 
   const faqs = [
     {
-      question: "Can I change plans anytime?",
-      answer: "Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate your billing."
+      question: "What is ChatSigma and why do I need it?",
+      answer: "ChatSigma is a WhatsApp Business API automation platform that helps businesses manage customer conversations, automate workflows, send broadcasts, and integrate with tools like Shopify, WooCommerce, Google Sheets, and more — all from a single dashboard."
     },
     {
-      question: "Is there a free trial?",
-      answer: "Yes, we offer a 7-day free trial with full access to all features. No credit card required to start, and you can cancel anytime."
+      question: "Does my plan include the official WhatsApp Business API?",
+      answer: "Yes. All ChatSigma plans include access to the official WhatsApp Business API, allowing you to send template messages, automate conversations, and manage customer communication at scale."
     },
     {
-      question: "What payment methods do you accept?",
-      answer: "We accept all major credit cards, PayPal, UPI (for Indian customers), and bank transfers for enterprise customers."
+      question: "Can I switch or upgrade my plan later?",
+      answer: "Yes. You can upgrade or change your plan at any time as your business grows. Your data, contacts, and automation workflows remain intact when switching plans."
     },
     {
-      question: "What happens if I exceed my message limit?",
-      answer: "If you exceed your monthly message limit on the Free plan, you'll need to upgrade to a paid plan for unlimited messaging. We'll notify you before you reach your limit."
+      question: "What are WhatsApp API conversation charges?",
+      answer: "WhatsApp applies separate charges for user-initiated and business-initiated conversations. These charges are not included in the ChatSigma subscription fee and vary based on the user's country and conversation type."
     },
     {
-      question: "Do you offer custom plans?",
-      answer: "Yes, for businesses with specific needs, we offer custom plans. Contact our sales team to discuss your requirements."
+      question: "Do all plans include chatbot and automation features?",
+      answer: "Yes. All plans include FAQ bot capabilities. Higher plans provide more advanced chatbots, AI-driven automation, and higher workflow limits."
+    },
+    {
+      question: "How many team members can use ChatSigma?",
+      answer: "Team inbox limits depend on the selected plan: Essential: Up to 5 agents, Automation Pro: Up to 10 agents, Automation Max: Unlimited agents."
+    },
+    {
+      question: "What type of support is included with each plan?",
+      answer: "Support availability depends on the plan: Essential: Email + Chat Support, Automation Pro: 24/7 Priority Chat + Email Support, Automation Max: 24/7 WhatsApp + Call + Email Support."
     }
   ];
 
