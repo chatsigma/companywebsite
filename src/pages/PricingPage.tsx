@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Check, Star, ArrowRight, Zap, Rocket, Trophy, Users, Bot, MessageCircle, Clock, Shield, Award, Headphones, ChevronDown, ChevronUp, Sparkles, TrendingUp, Target, BarChart3, HeartHandshake, Building2 } from 'lucide-react';
+import { Check, Star, ArrowRight, Zap, Rocket, Trophy, Users, Bot, MessageCircle, Clock, Shield, Award, Headphones, ChevronDown, ChevronUp, Sparkles, TrendingUp, Target, BarChart3, HeartHandshake, Building2, CheckCircle2, Calendar, UserCheck, FileCheck, Settings } from 'lucide-react';
 
 const PricingPage = () => {
   const [showUSD, setShowUSD] = useState(false);
@@ -544,7 +544,7 @@ const PricingPage = () => {
       </section>
 
       {/* WhatsApp Business API Conversational Cost Pricing Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 relative z-10">
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-3xl shadow-lg border-2 border-gray-200 p-8 sm:p-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -554,7 +554,7 @@ const PricingPage = () => {
               WhatsApp charges additional charges per conversation
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* User initiated conversation */}
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -575,16 +575,155 @@ const PricingPage = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <a
-              href="https://developers.facebook.com/docs/whatsapp/pricing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#25D366] font-semibold text-lg hover:text-[#1ea952] transition-colors duration-300 group"
-            >
-              View pricing by country
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
+      {/* Guided Onboarding Section */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-gradient-to-br from-[#25D366]/5 to-[#1877F2]/5 rounded-3xl shadow-xl border-2 border-[#25D366]/20 p-8 sm:p-12 relative overflow-hidden">
+            {/* Background Pattern */}
+            <div className="absolute inset-0 opacity-30">
+              <div className="absolute top-10 right-10 w-40 h-40 bg-[#25D366]/20 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-10 left-10 w-40 h-40 bg-[#1877F2]/20 rounded-full blur-3xl"></div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+              {/* Left Content */}
+              <div>
+                <div className="inline-flex items-center gap-2 bg-[#25D366]/10 border border-[#25D366]/30 rounded-full px-4 py-2 mb-6">
+                  <Award className="w-4 h-4 text-[#25D366]" />
+                  <span className="text-sm font-semibold text-gray-900">Premium Support</span>
+                </div>
+
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                  Guided Onboarding & Setup — Included at No Extra Cost
+                </h2>
+
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                  Our onboarding specialists work closely with you to ensure a smooth, compliant, and results-driven setup, so you can start using WhatsApp automation confidently from day one.
+                </p>
+
+                {/* Benefits List */}
+                <div className="space-y-4 mb-8">
+                  {[
+                    {
+                      icon: UserCheck,
+                      text: 'Assistance with Facebook Page approval and Meta Business verification'
+                    },
+                    {
+                      icon: Settings,
+                      text: 'WhatsApp Business number registration and configuration'
+                    },
+                    {
+                      icon: Users,
+                      text: 'Importing contacts and setting up broadcast lists correctly'
+                    },
+                    {
+                      icon: Shield,
+                      text: 'Compliance best practices to protect your number and avoid bans'
+                    },
+                    {
+                      icon: Target,
+                      text: 'Strategic guidance to design automation that supports your business goals'
+                    }
+                  ].map((item, index) => {
+                    const Icon = item.icon;
+                    return (
+                      <div
+                        key={index}
+                        className="flex items-start gap-4 group"
+                      >
+                        <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#25D366]/10 flex items-center justify-center group-hover:bg-[#25D366] transition-all duration-300">
+                          <Icon className="w-5 h-5 text-[#25D366] group-hover:text-white transition-colors" />
+                        </div>
+                        <p className="text-gray-700 leading-relaxed pt-2 font-medium">
+                          {item.text}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* CTA Button */}
+                <a
+                  href="https://calendly.com/chatsigma-info/new-meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1ea952] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
+                >
+                  <Calendar className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+                  Schedule a Setup & Strategy Call
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+
+              {/* Right Graphics */}
+              <div className="relative hidden lg:block">
+                <div className="relative">
+                  {/* Main Visual Card */}
+                  <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-all duration-500">
+                    <div className="space-y-6">
+                      {/* Setup Progress */}
+                      <div className="flex items-center gap-3">
+                        <div className="w-12 h-12 rounded-full bg-[#25D366] flex items-center justify-center">
+                          <CheckCircle2 className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+                            <div className="h-full bg-[#25D366] rounded-full" style={{ width: '85%' }}></div>
+                          </div>
+                          <p className="text-sm text-gray-600 mt-1">Setup Progress: 85%</p>
+                        </div>
+                      </div>
+
+                      {/* Setup Steps */}
+                      <div className="space-y-3">
+                        {[
+                          { text: 'Meta Business Verification', done: true },
+                          { text: 'WhatsApp Number Registration', done: true },
+                          { text: 'Contact Import & Segmentation', done: true },
+                          { text: 'Automation Setup', done: false }
+                        ].map((step, index) => (
+                          <div key={index} className="flex items-center gap-3">
+                            {step.done ? (
+                              <CheckCircle2 className="w-5 h-5 text-[#25D366]" />
+                            ) : (
+                              <div className="w-5 h-5 rounded-full border-2 border-gray-300"></div>
+                            )}
+                            <span className={`text-sm ${step.done ? 'text-gray-900 font-medium' : 'text-gray-500'}`}>
+                              {step.text}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Stats Cards */}
+                      <div className="grid grid-cols-2 gap-3 pt-4">
+                        <div className="bg-[#25D366]/10 rounded-xl p-4">
+                          <p className="text-2xl font-bold text-[#25D366]">24/7</p>
+                          <p className="text-xs text-gray-600">Support Available</p>
+                        </div>
+                        <div className="bg-[#1877F2]/10 rounded-xl p-4">
+                          <p className="text-2xl font-bold text-[#1877F2]">100%</p>
+                          <p className="text-xs text-gray-600">Compliant Setup</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Floating Badge */}
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-[#25D366] to-[#1ea952] text-white px-6 py-3 rounded-full shadow-2xl transform rotate-12 hover:rotate-6 transition-transform">
+                    <p className="text-sm font-bold">FREE Setup!</p>
+                  </div>
+
+                  {/* Decorative Elements */}
+                  <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[#25D366]/20 rounded-full blur-2xl animate-pulse"></div>
+                  <div className="absolute -top-8 left-1/2 w-16 h-16 bg-[#1877F2]/20 rounded-full blur-xl animate-float"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -593,7 +732,7 @@ const PricingPage = () => {
       <section
         id="benefits-section"
         ref={sectionRefs.current.benefits}
-        className={`py-20 sm:py-28 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['benefits-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'} bg-gradient-to-br from-gray-50 to-white relative overflow-hidden`}
+        className={`py-12 sm:py-16 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['benefits-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'} bg-gradient-to-br from-gray-50 to-white relative overflow-hidden`}
       >
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-40">
@@ -670,7 +809,7 @@ const PricingPage = () => {
       <section
         id="faq-section"
         ref={sectionRefs.current.faq}
-        className={`py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-white transition-all duration-1000 ${isVisible['faq-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'}`}
+        className={`py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white transition-all duration-1000 ${isVisible['faq-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'}`}
       >
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
@@ -761,7 +900,7 @@ const PricingPage = () => {
       <section
         id="cta-section"
         ref={sectionRefs.current.cta}
-        className={`py-20 sm:py-28 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['cta-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'} bg-gradient-to-br from-gray-50 to-white relative overflow-hidden`}
+        className={`py-12 sm:py-16 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['cta-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'} bg-gradient-to-br from-gray-50 to-white relative overflow-hidden`}
       >
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
