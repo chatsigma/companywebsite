@@ -543,6 +543,52 @@ const PricingPage = () => {
         </div>
       </section>
 
+      {/* WhatsApp Business API Conversational Cost Pricing Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white rounded-3xl shadow-lg border-2 border-gray-200 p-8 sm:p-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              WhatsApp Business API Conversational Cost Pricing
+            </h2>
+            <p className="text-lg text-gray-600 mb-12">
+              WhatsApp charges additional charges per conversation
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              {/* User initiated conversation */}
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  User initiated conversation
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Whenever a business replies to a user within the 24 hour customer service window, that message initiates a user-initiated conversation
+                </p>
+              </div>
+
+              {/* Business initiated conversation */}
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Business initiated conversation
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  A conversation that initiates from a business sending a user a message outside the 24-hour customer service window.
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="https://developers.facebook.com/docs/whatsapp/pricing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[#25D366] font-semibold text-lg hover:text-[#1ea952] transition-colors duration-300 group"
+            >
+              View pricing by country
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section
         id="benefits-section"
