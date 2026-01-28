@@ -7,7 +7,7 @@ const TrustedBy = () => {
   const companies = [
     {
       name: 'Trusted Partner 1',
-      logo: '/2.PNG',
+      logo: '/2.png',
       color: '#25D366',
       fallbackText: 'TP1'
     },
@@ -19,13 +19,13 @@ const TrustedBy = () => {
     },
     {
       name: 'Trusted Partner 3',
-      logo: '/LAST 3.jpg',
+      logo: '/LAST3.jpg',
       color: '#9C27B0',
       fallbackText: 'TP3'
     },
     {
       name: 'Trusted Partner 4',
-      logo: '/5.PNG',
+      logo: '/5.png',
       color: '#FF9800',
       fallbackText: 'TP4'
     },
