@@ -343,7 +343,7 @@ const PricingPage = () => {
       <section
         id="hero-section"
         ref={sectionRefs.current.hero}
-        className={`relative pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['hero-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'}`}
+        className={`relative pt-24 sm:pt-32 pb-8 sm:pb-12 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['hero-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'}`}
       >
         <div className="max-w-5xl mx-auto text-center relative z-10">
           {/* Badge */}
@@ -354,7 +354,7 @@ const PricingPage = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-black leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-black leading-tight">
             <span className="bg-gradient-to-r from-[#25D366] to-[#1877F2] bg-clip-text text-transparent animate-gradient">
               Simple, Transparent Pricing
             </span>
@@ -368,12 +368,12 @@ const PricingPage = () => {
           </p>
 
           {/* Trust Line */}
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-sm text-gray-600 mb-8">
-            <span className="font-medium">Official WhatsApp Business API</span>
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-base sm:text-lg text-gray-700 mb-8">
+            <span className="font-semibold">Official WhatsApp Business API</span>
             <span className="text-gray-400">•</span>
-            <span className="font-medium">Meta-compliant</span>
+            <span className="font-semibold">Meta-compliant</span>
             <span className="text-gray-400">•</span>
-            <span className="font-medium">Built for growing businesses</span>
+            <span className="font-semibold">Built for growing businesses</span>
           </div>
 
           {/* CTA Button */}
@@ -393,32 +393,32 @@ const PricingPage = () => {
       <section
         id="pricing-section"
         ref={sectionRefs.current.pricing}
-        className={`py-12 sm:py-16 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['pricing-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'} z-10 relative`}
+        className={`py-8 sm:py-12 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['pricing-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'} z-10 relative`}
       >
         <div className="max-w-7xl mx-auto">
           {/* Currency Toggle */}
-          <div className="flex justify-center mb-12 sm:mb-16">
-            <div className="inline-flex items-center bg-gray-100 rounded-full p-1.5 shadow-lg border border-gray-200">
+          <div className="flex justify-center mb-8 sm:mb-10">
+            <div className="inline-flex items-center bg-gray-100 rounded-full p-1 shadow-md border border-gray-200">
               <button
-                className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                   !showUSD
-                    ? 'bg-[#25D366] text-white shadow-lg scale-105'
+                    ? 'bg-[#25D366] text-white shadow-md'
                     : 'text-gray-700 hover:bg-white'
                 }`}
                 onClick={() => setShowUSD(false)}
               >
-                <span className="text-lg">₹</span>
+                <span className="text-base">₹</span>
                 <span>INR</span>
               </button>
               <button
-                className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                   showUSD
-                    ? 'bg-[#1877F2] text-white shadow-lg scale-105'
+                    ? 'bg-[#25D366] text-white shadow-md'
                     : 'text-gray-700 hover:bg-white'
                 }`}
                 onClick={() => setShowUSD(true)}
               >
-                <span className="text-lg">$</span>
+                <span className="text-base">$</span>
                 <span>USD</span>
               </button>
             </div>
@@ -447,8 +447,8 @@ const PricingPage = () => {
                   {/* Popular Badge */}
                   {plan.popular && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-30">
-                      <div className="bg-gradient-to-r from-[#25D366] to-[#1ea952] text-white px-4 py-1.5 rounded-full text-xs font-bold flex items-center shadow-2xl animate-bounce-slow whitespace-nowrap">
-                        <Star className="h-3.5 w-3.5 mr-1.5 text-yellow-300 fill-current animate-pulse" />
+                      <div className="bg-gradient-to-r from-[#25D366] to-[#1ea952] text-white px-4 py-1.5 rounded-full text-xs font-bold flex items-center shadow-2xl whitespace-nowrap">
+                        <Star className="h-3.5 w-3.5 mr-1.5 text-yellow-300 fill-current" />
                         {plan.tagline}
                       </div>
                     </div>
@@ -460,7 +460,7 @@ const PricingPage = () => {
                     <div className="mb-6">
                       <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl mb-4 transition-transform duration-500 ${
                         hoveredPlan === index ? 'scale-110 rotate-3' : ''
-                      } ${plan.popular ? 'bg-[#25D366]' : 'bg-gray-900'}`}>
+                      } bg-[#25D366]`}>
                         <Icon className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
@@ -478,7 +478,7 @@ const PricingPage = () => {
                           </span>
                         )}
                         <div className="flex items-baseline">
-                          <span className={`text-5xl font-bold ${plan.popular ? 'text-[#25D366]' : 'text-gray-900'}`}>
+                          <span className="text-5xl font-bold text-[#25D366]">
                             {plan.price}
                           </span>
                           <span className="text-gray-600 ml-2 text-lg">{plan.period}</span>
@@ -496,9 +496,7 @@ const PricingPage = () => {
                           style={{ animationDelay: `${featureIndex * 0.05}s`, animationFillMode: 'forwards' }}
                         >
                           <div className="flex-shrink-0 mt-1">
-                            <div className={`w-5 h-5 rounded-full flex items-center justify-center ${
-                              plan.popular ? 'bg-[#25D366]' : 'bg-gray-900'
-                            }`}>
+                            <div className="w-5 h-5 rounded-full flex items-center justify-center bg-[#25D366]">
                               <Check className="h-3 w-3 text-white" strokeWidth={3} />
                             </div>
                           </div>
@@ -518,24 +516,18 @@ const PricingPage = () => {
                       href={plan.ctaLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center relative overflow-hidden group shadow-lg ${
-                        plan.popular
-                          ? 'bg-[#25D366] text-white hover:bg-[#1ea952]'
-                          : 'bg-gray-900 text-white hover:bg-gray-800'
-                      }`}
+                      className="w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center relative overflow-hidden group shadow-lg bg-[#25D366] text-white hover:bg-[#1ea952]"
                     >
                       <span className="absolute -inset-x-10 top-0 bottom-0 h-full w-20 bg-white/20 transform -skew-x-12 group-hover:animate-shine"></span>
                       <span className="relative z-10 flex items-center">
-                        {plan.cta}
+                        Get Started
                         <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                       </span>
                     </a>
                   </div>
 
                   {/* Bottom Accent */}
-                  <div className={`absolute bottom-0 left-0 right-0 h-1 transition-all duration-500 ${
-                    plan.popular ? 'bg-[#25D366]' : 'bg-gray-900'
-                  } ${hoveredPlan === index ? 'h-2' : ''}`}></div>
+                  <div className={`absolute bottom-0 left-0 right-0 h-1 transition-all duration-500 bg-[#25D366] ${hoveredPlan === index ? 'h-2' : ''}`}></div>
                 </div>
               );
             })}
@@ -544,7 +536,7 @@ const PricingPage = () => {
       </section>
 
       {/* WhatsApp Business API Conversational Cost Pricing Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50 relative z-10">
+      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-50 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-3xl shadow-lg border-2 border-gray-200 p-8 sm:p-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -580,7 +572,7 @@ const PricingPage = () => {
       </section>
 
       {/* Guided Onboarding Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white relative z-10">
+      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-white relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="bg-gradient-to-br from-[#25D366]/5 to-[#1877F2]/5 rounded-3xl shadow-xl border-2 border-[#25D366]/20 p-8 sm:p-12 relative overflow-hidden">
             {/* Background Pattern */}
@@ -732,7 +724,7 @@ const PricingPage = () => {
       <section
         id="benefits-section"
         ref={sectionRefs.current.benefits}
-        className={`py-12 sm:py-16 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['benefits-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'} bg-gradient-to-br from-gray-50 to-white relative overflow-hidden`}
+        className={`py-8 sm:py-12 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['benefits-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'} bg-gradient-to-br from-gray-50 to-white relative overflow-hidden`}
       >
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-40">
@@ -809,46 +801,46 @@ const PricingPage = () => {
       <section
         id="faq-section"
         ref={sectionRefs.current.faq}
-        className={`py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white transition-all duration-1000 ${isVisible['faq-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'}`}
+        className={`py-8 sm:py-12 px-4 sm:px-6 lg:px-8 bg-white transition-all duration-1000 ${isVisible['faq-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'}`}
       >
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-[#1877F2]/10 border border-[#1877F2]/20 rounded-full px-6 py-2 mb-6">
               <Headphones className="w-5 h-5 text-[#1877F2]" />
               <span className="text-sm font-semibold text-gray-900">Got Questions?</span>
             </div>
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Everything you need to know about ChatSigma pricing and features
             </p>
           </div>
 
           {/* FAQ Accordion */}
-          <div className="space-y-4">
+          <div className="space-y-3">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 overflow-hidden ${
+                className={`bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border-2 overflow-hidden ${
                   activeFAQ === index ? 'border-[#25D366]' : 'border-gray-200 hover:border-[#25D366]/50'
                 }`}
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none group"
+                  className="w-full px-6 py-4 text-left flex items-center justify-between focus:outline-none group"
                 >
-                  <span className="font-bold text-lg text-gray-900 pr-4 group-hover:text-[#25D366] transition-colors">
+                  <span className="font-semibold text-base text-gray-900 pr-4 group-hover:text-[#25D366] transition-colors">
                     {faq.question}
                   </span>
                   <div
-                    className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
+                    className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
                       activeFAQ === index ? 'bg-[#25D366] rotate-180' : 'bg-gray-100 group-hover:bg-[#25D366]/10'
                     }`}
                   >
                     <ChevronDown
-                      className={`h-5 w-5 transition-colors ${
+                      className={`h-4 w-4 transition-colors ${
                         activeFAQ === index ? 'text-white' : 'text-gray-600 group-hover:text-[#25D366]'
                       }`}
                     />
@@ -860,9 +852,9 @@ const PricingPage = () => {
                     activeFAQ === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
                   }`}
                 >
-                  <div className="px-8 pb-6">
-                    <div className="w-full h-px bg-gradient-to-r from-[#25D366]/20 via-[#25D366]/50 to-[#25D366]/20 mb-4"></div>
-                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  <div className="px-6 pb-4">
+                    <div className="w-full h-px bg-gradient-to-r from-[#25D366]/20 via-[#25D366]/50 to-[#25D366]/20 mb-3"></div>
+                    <p className="text-sm text-gray-600 leading-relaxed">{faq.answer}</p>
                   </div>
                 </div>
               </div>
@@ -870,8 +862,8 @@ const PricingPage = () => {
           </div>
 
           {/* Contact Support CTA */}
-          <div className="mt-12 text-center">
-            <p className="text-gray-600 mb-6 text-lg">
+          <div className="mt-10 text-center">
+            <p className="text-gray-600 mb-5 text-base">
               Still have questions? Our team is here to help!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -879,127 +871,20 @@ const PricingPage = () => {
                 href="https://calendly.com/chatsigma-info/new-meeting"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ea952] transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ea952] transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
-                <Headphones className="w-5 h-5 mr-2" />
-                Schedule a Call
+                <Calendar className="w-5 h-5 mr-2" />
+                Book Appointment
               </a>
               <a
-                href="mailto:support@chatsigma.com"
-                className="inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                href="https://wa.me/919205457478"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#25D366] text-white rounded-xl font-semibold hover:bg-[#1ea952] transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
-                Email Support
+                WhatsApp Support
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* CTA Section */}
-      <section
-        id="cta-section"
-        ref={sectionRefs.current.cta}
-        className={`py-12 sm:py-16 px-4 sm:px-6 lg:px-8 transition-all duration-1000 ${isVisible['cta-section'] ? 'opacity-100' : 'opacity-0 translate-y-10'} bg-gradient-to-br from-gray-50 to-white relative overflow-hidden`}
-      >
-        {/* Background Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#25D366]/5 rounded-full blur-3xl animate-pulse-slow"></div>
-        </div>
-
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="relative bg-gradient-to-br from-[#25D366] via-[#1ea952] to-[#128C7E] rounded-3xl p-10 sm:p-16 text-white text-center overflow-hidden shadow-2xl">
-            {/* Animated background pattern */}
-            <div className="absolute inset-0 overflow-hidden opacity-20">
-              <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L2c+PC9zdmc+')] animate-slide-bg"></div>
-            </div>
-
-            {/* Floating elements */}
-            <div className="absolute top-10 left-10 w-24 h-24 bg-white/10 rounded-full blur-2xl animate-float"></div>
-            <div className="absolute bottom-10 right-10 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }}></div>
-            <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-white/10 rounded-full blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
-
-            <div className="relative z-10">
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full px-6 py-2 mb-8">
-                <Rocket className="w-4 h-4 text-white" />
-                <span className="text-sm font-semibold text-white">Limited Time Offer</span>
-              </div>
-
-              {/* Heading */}
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Ready to Transform Your
-                <br />
-                Customer Communication?
-              </h2>
-
-              {/* Subheading */}
-              <p className="text-lg sm:text-xl md:text-2xl mb-4 opacity-95 max-w-3xl mx-auto leading-relaxed">
-                Join 2,000+ businesses already using ChatSigma to automate conversations and boost sales
-              </p>
-              <p className="text-base sm:text-lg mb-10 opacity-90 max-w-2xl mx-auto">
-                Start your 7-day free trial today. No credit card required. Cancel anytime.
-              </p>
-
-              {/* Trust Indicators */}
-              <div className="flex flex-wrap items-center justify-center gap-6 mb-10 text-sm">
-                <div className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-white" />
-                  <span>Free 7-day trial</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-white" />
-                  <span>No credit card needed</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-white" />
-                  <span>24/7 support</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-white" />
-                  <span>Cancel anytime</span>
-                </div>
-              </div>
-
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a
-                  href="https://app.chatsigma.com/vb/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-8 sm:px-10 py-4 sm:py-5 bg-white text-[#25D366] rounded-xl text-lg font-bold hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center justify-center min-w-[200px] relative overflow-hidden group"
-                >
-                  <span className="absolute -inset-x-10 top-0 bottom-0 h-full w-24 bg-[#25D366]/10 transform -skew-x-12 group-hover:animate-shine"></span>
-                  <span className="relative z-10 flex items-center">
-                    Start Free Trial
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </a>
-                <a
-                  href="https://calendly.com/chatsigma-info/new-meeting"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-8 sm:px-10 py-4 sm:py-5 bg-transparent border-3 border-white text-white rounded-xl text-lg font-bold hover:bg-white/10 transition-all duration-300 transform hover:scale-105 flex items-center justify-center min-w-[200px] relative overflow-hidden group"
-                >
-                  <span className="absolute -inset-x-10 top-0 bottom-0 h-full w-24 bg-white/10 transform -skew-x-12 group-hover:animate-shine"></span>
-                  <span className="relative z-10 flex items-center">
-                    <Headphones className="mr-2 h-5 w-5" />
-                    Schedule Demo
-                  </span>
-                </a>
-              </div>
-
-              {/* Social Proof */}
-              <div className="mt-12 flex items-center justify-center gap-2 text-sm opacity-90">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <div key={i} className="w-10 h-10 rounded-full bg-white/20 border-2 border-white flex items-center justify-center">
-                      <Users className="w-5 h-5 text-white" />
-                    </div>
-                  ))}
-                </div>
-                <span className="font-semibold">Join 2,000+ happy customers</span>
-              </div>
             </div>
           </div>
         </div>
