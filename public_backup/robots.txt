@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://chatsigma.com/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Block access to admin areas (if any in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Explicitly allow important sections
+Allow: /tools/
+Allow: /resources/
+Allow: /industries/
+Allow: /features/
+Allow: /about
+Allow: /pricing
+Allow: /contact
+Allow: /integrations
+Allow: /api-documentation
+Allow: /whatsapp-bluetick-verification
+
+# Allow search engines to crawl all public content
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /cookie-policy
