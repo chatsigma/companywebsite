@@ -739,13 +739,8 @@ const PricingPage = () => {
                   <tr className="bg-gradient-to-r from-[#25D366]/10 to-[#1877F2]/10 border-b-2 border-gray-200">
                     <th className="text-left p-6 text-gray-900 font-bold text-lg">Features</th>
                     <th className="text-center p-6 text-gray-900 font-bold text-lg">Essestional</th>
-                    <th className="text-center p-6 text-gray-900 font-bold text-lg relative">
-                      <div className="inline-flex flex-col items-center">
-                        <div className="absolute -top-3 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FF8C00] text-gray-900 px-4 py-1 rounded-full text-xs font-black shadow-lg border-2 border-white">
-                          Most Popular
-                        </div>
-                        <span className="mt-4">Automation Pro</span>
-                      </div>
+                    <th className="text-center p-6 text-gray-900 font-bold text-lg">
+                      Automation Pro
                     </th>
                     <th className="text-center p-6 text-gray-900 font-bold text-lg">Automation Max</th>
                   </tr>
