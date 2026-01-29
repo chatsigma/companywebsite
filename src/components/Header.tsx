@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, MessageCircle, Phone, Star, Users, Zap, Shield, BarChart3, Bot, QrCode, Link as LinkIcon, Code, UserPlus, FileText, CheckCircle, Eye, MessageSquare, Award, Plane, Car, Store, Factory, Truck, Compass, Scale, Smartphone, Film, Heart, Building2 } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -81,7 +82,7 @@ const Header = () => {
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img
-                src="/image.png"
+                src={logo}
                 alt="ChatSigma - Chat.Convert.Repeat"
                 className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto object-contain drop-shadow-sm"
                 loading="eager"

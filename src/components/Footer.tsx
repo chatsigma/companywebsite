@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MessageCircle, Twitter, Linkedin, Facebook, Youtube, Mail, Phone, MapPin, Heart, Award } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   const quickLinks = [
@@ -49,7 +50,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
               <img
-                src="/image.png"
+                src={logo}
                 alt="ChatSigma Logo"
                 className="h-16 w-auto object-contain"
               />
