@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MessageCircle, Twitter, Linkedin, Facebook, Youtube, Mail, Phone, MapPin, Heart, Award } from 'lucide-react';
-import logo from '../assets/logo.png';
+import logo from '../assets/finallogocs.png';
 
 const Footer = () => {
   const quickLinks = [
