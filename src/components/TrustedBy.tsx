@@ -1,52 +1,6 @@
-import React, { useState } from 'react';
-import { Building2 } from 'lucide-react';
+import React from 'react';
 
 const TrustedBy = () => {
-  const [imageErrors, setImageErrors] = useState<{[key: number]: boolean}>({});
-
-  const companies = [
-    {
-      name: 'Trusted Partner 1',
-      logo: '/2.png',
-      color: '#25D366',
-      fallbackText: 'TP1'
-    },
-    {
-      name: 'Trusted Partner 2',
-      logo: '/6.jpg',
-      color: '#006AFF',
-      fallbackText: 'TP2'
-    },
-    {
-      name: 'Trusted Partner 3',
-      logo: '/LAST3.jpg',
-      color: '#9C27B0',
-      fallbackText: 'TP3'
-    },
-    {
-      name: 'Trusted Partner 4',
-      logo: '/5.png',
-      color: '#FF9800',
-      fallbackText: 'TP4'
-    },
-    {
-      name: 'Trusted Partner 5',
-      logo: '/1.png',
-      color: '#F44336',
-      fallbackText: 'TP5'
-    },
-    {
-      name: 'Trusted Partner 6',
-      logo: '/3.jpg',
-      color: '#4CAF50',
-      fallbackText: 'TP6'
-    }
-  ];
-
-  const handleImageError = (index: number) => {
-    setImageErrors(prev => ({ ...prev, [index]: true }));
-  };
-
   return (
     <section className="py-6 sm:py-8 md:py-12 bg-white">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
@@ -57,63 +11,6 @@ const TrustedBy = () => {
           <p className="text-gray-600 max-w-2xl mx-auto text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-0">
             From startups to mid-market companies, businesses choose ChatSigma for reliable WhatsApp automation
           </p>
-        </div>
-
-        {/* Company logos with mobile optimization */}
-        <div className="relative overflow-hidden bg-white rounded-lg sm:rounded-xl md:rounded-2xl p-3 sm:p-4 md:p-8 mb-6 sm:mb-8 md:mb-12 shadow-md sm:shadow-lg">
-          <div className="absolute inset-0 bg-[#25D366]/3"></div>
-          <div className="relative">
-            <div className="flex animate-scroll-fast">
-              {[...companies, ...companies].map((company, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 mx-2 sm:mx-3 md:mx-6 group"
-                >
-                  <div 
-                    className="bg-white rounded-md sm:rounded-lg md:rounded-xl p-3 sm:p-4 md:p-8 shadow-md sm:shadow-lg hover:shadow-xl sm:hover:shadow-2xl transition-all duration-300 transform hover:scale-110 sm:hover:scale-125 min-w-[120px] sm:min-w-[180px] md:min-w-[240px] h-16 sm:h-24 md:h-32 flex items-center justify-center border-2 border-transparent hover:border-opacity-50 relative overflow-hidden"
-                    style={{ 
-                      '--hover-border-color': company.color,
-                    } as React.CSSProperties}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.borderColor = company.color;
-                      e.currentTarget.style.boxShadow = `0 10px 25px ${company.color}20`;
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.borderColor = 'transparent';
-                      e.currentTarget.style.boxShadow = '';
-                    }}
-                  >
-                    {/* Company Logo or Fallback */}
-                    {imageErrors[index] ? (
-                      <div className="flex flex-col items-center justify-center h-full w-full">
-                        <div
-                          className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white"
-                          style={{ backgroundColor: company.color }}
-                        >
-                          <Building2 className="w-6 h-6 sm:w-8 sm:h-8" />
-                        </div>
-                        <span className="text-xs mt-2 text-gray-600 font-semibold text-center px-2">{company.name}</span>
-                      </div>
-                    ) : (
-                      <img
-                        src={company.logo}
-                        alt={company.name}
-                        className="h-10 sm:h-14 md:h-18 w-auto max-w-[100px] sm:max-w-[160px] md:max-w-[200px] object-contain transition-all duration-300"
-                        loading="eager"
-                        onError={() => handleImageError(index)}
-                      />
-                    )}
-
-                    {/* Brand color accent */}
-                    <div
-                      className="absolute bottom-0 left-0 right-0 h-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      style={{ backgroundColor: company.color }}
-                    ></div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Stats with mobile optimization */}
