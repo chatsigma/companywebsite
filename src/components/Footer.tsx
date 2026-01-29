@@ -49,7 +49,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
               <img
-                src="/cs_logo_web-removebg-preview.png"
+                src="/image.png"
                 alt="ChatSigma Logo"
                 className="h-16 w-auto object-contain"
               />
