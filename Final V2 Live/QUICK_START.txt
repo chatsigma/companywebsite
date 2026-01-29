@@ -1,0 +1,61 @@
+╔════════════════════════════════════════════════════════════════╗
+║                   CHATSIGMA - HOSTINGER DEPLOYMENT             ║
+║                        QUICK START GUIDE                       ║
+╚════════════════════════════════════════════════════════════════╝
+
+🚀 FASTEST DEPLOYMENT METHOD (3 MINUTES):
+──────────────────────────────────────────────────────────────────
+
+1. Login to Hostinger (hpanel.hostinger.com)
+
+2. Open "File Manager"
+
+3. Go to "public_html" folder
+
+4. DELETE all existing files (important!)
+
+5. UPLOAD all files from this "Final V2 Live" folder
+   OR
+   UPLOAD the "Final_V2_Live.zip" and extract it
+
+6. Visit your domain - Done! ✓
+
+
+📋 FILE CHECKLIST (Must have all):
+──────────────────────────────────────────────────────────────────
+✓ index.html
+✓ assets/ folder (with 5 files inside)
+✓ image.png
+✓ manifest.json
+✓ robots.txt
+✓ sitemap.xml
+
+
+🔍 VERIFY YOUR LOGO:
+──────────────────────────────────────────────────────────────────
+After deployment, check that you see:
+• ChatSigma logo in the header (top)
+• ChatSigma logo in the footer (bottom)
+• "Chat.Convert.Repeat" tagline visible
+
+
+⚡ TROUBLESHOOTING:
+──────────────────────────────────────────────────────────────────
+Website not showing?
+→ Clear browser cache (Ctrl + F5)
+→ Check all files uploaded to public_html/
+→ Verify SSL is enabled in Hostinger
+
+Logo not showing?
+→ Check that assets/ folder uploaded correctly
+→ Look for finallogocs-D26q6HJy.png in assets/
+
+
+📞 NEED HELP?
+──────────────────────────────────────────────────────────────────
+Read: DEPLOYMENT_INSTRUCTIONS.txt (detailed guide)
+
+
+Built with: React + Vite + TypeScript + Tailwind CSS
+Package Size: 335 KB (compressed)
+Ready to go live! 🎉
