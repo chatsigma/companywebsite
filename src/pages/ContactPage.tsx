@@ -7,7 +7,8 @@ const ContactPage = () => {
     email: '',
     phone: '',
     company: '',
-    message: ''
+    message: '',
+    consentOptIn: false
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -17,9 +18,10 @@ const ContactPage = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value, type } = e.target;
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value
     });
   };
 
@@ -195,6 +197,22 @@ const ContactPage = () => {
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#25D366] focus:border-transparent transition-colors resize-none text-sm sm:text-base"
                   placeholder="Tell us about your business and how we can help..."
                 />
+              </div>
+
+              <div className="bg-[#25D366]/10 rounded-lg p-4 sm:p-5 border border-[#25D366]/30">
+                <div className="flex items-start space-x-3">
+                  <input
+                    type="checkbox"
+                    id="consentOptIn"
+                    name="consentOptIn"
+                    checked={formData.consentOptIn}
+                    onChange={handleChange}
+                    className="mt-1 h-4 w-4 text-[#25D366] rounded focus:ring-2 focus:ring-[#25D366] cursor-pointer"
+                  />
+                  <label htmlFor="consentOptIn" className="text-sm sm:text-base text-gray-700 cursor-pointer">
+                    <span className="font-semibold">I agree to receive messages</span> for communication via SMS, RCS, WhatsApp, Email
+                  </label>
+                </div>
               </div>
 
               <button

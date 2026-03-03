@@ -31,12 +31,15 @@
 ✓ sitemap.xml
 
 
-🔍 VERIFY YOUR LOGO:
+🔍 VERIFY YOUR UPDATES:
 ──────────────────────────────────────────────────────────────────
 After deployment, check that you see:
 • ChatSigma logo in the header (top)
 • ChatSigma logo in the footer (bottom)
 • "Chat.Convert.Repeat" tagline visible
+• Contact page has consent checkbox
+• Privacy Policy includes communication consent
+• Terms of Service includes authorization clause
 
 
 ⚡ TROUBLESHOOTING:
@@ -50,12 +53,24 @@ Logo not showing?
 → Check that assets/ folder uploaded correctly
 → Look for finallogocs-D26q6HJy.png in assets/
 
+Consent checkbox not showing?
+→ Hard refresh page (Ctrl + Shift + R)
+→ Clear browser cache
+→ Check contact page in latest build
+
 
 📞 NEED HELP?
 ──────────────────────────────────────────────────────────────────
 Read: DEPLOYMENT_INSTRUCTIONS.txt (detailed guide)
 
 
+NEW UPDATES IN THIS BUILD:
+✓ Compliance statements added
+✓ Consent checkbox on contact form
+✓ TRAI-approved communication disclosure
+✓ All features ready for production
+
+
 Built with: React + Vite + TypeScript + Tailwind CSS
-Package Size: 335 KB (compressed)
+Package Size: 340 KB (compressed)
 Ready to go live! 🎉

@@ -125,6 +125,9 @@ const TermsOfService = () => {
                 <span>Complying with WhatsApp Business Policy and Meta's Terms of Service</span>
               </li>
             </ul>
+            <p className="mt-4 p-4 bg-blue-50 rounded-xl border-l-4 border-[#1877F2]">
+              <strong className="text-[#1877F2]">Communication Authorization:</strong> We collect personal details like your name, email address, and phone number etc. By sharing your information, you authorize ChatSigma to contact you via SMS, RCS, WhatsApp, Email, and other communication channels. This consent overrides any NDNC/DND registration as per TRAI regulations.
+            </p>
           </div>
         </div>
 
